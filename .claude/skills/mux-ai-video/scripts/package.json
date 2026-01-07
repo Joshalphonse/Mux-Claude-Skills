@@ -1,0 +1,17 @@
+{
+  "name": "mux-ai-skill-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "analyze": "tsx analyze-video.ts"
+  },
+  "dependencies": {
+    "@mux/ai": "^0.4.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
