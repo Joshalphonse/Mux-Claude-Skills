@@ -41,3 +41,4 @@ Get your Mux credentials at [dashboard.mux.com/settings/access-tokens](https://d
 
 - [SKILL.md](.claude/skills/mux-ai-video/SKILL.md) — Skill overview
 - [WORKFLOWS.md](.claude/skills/mux-ai-video/WORKFLOWS.md) — Detailed workflow reference
+- [Mux Docs Skill](.claude/skills/mux-docs/SKILL.md) — Build a local corpus from the mux.com docs for grounded Q&A
