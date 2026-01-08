@@ -70,7 +70,7 @@ function parseArgs(): AnalysisOptions {
 
 async function analyzeSummary(assetId: string, provider: Provider) {
   console.log("\n📝 Generating Summary and Tags...\n");
-  
+
   const result = await getSummaryAndTags(assetId, {
     provider,
     tone: "professional",
@@ -81,13 +81,13 @@ async function analyzeSummary(assetId: string, provider: Provider) {
   console.log(`\nDescription:\n${result.description}`);
   console.log(`\nTags: ${result.tags.join(", ")}`);
   console.log(`\nAsset ID: ${result.assetId}`);
-  
+
   return result;
 }
 
 async function analyzeChapters(assetId: string, provider: Provider) {
   console.log("\n📑 Generating Chapters...\n");
-  
+
   const result = await generateChapters(assetId, "en", {
     provider,
   });
@@ -100,13 +100,13 @@ async function analyzeChapters(assetId: string, provider: Provider) {
     console.log(`  ${timestamp} - ${chapter.title}`);
   }
   console.log(`\nLanguage: ${result.languageCode}`);
-  
+
   return result;
 }
 
 async function analyzeModeration(assetId: string) {
   console.log("\n🛡️ Running Content Moderation...\n");
-  
+
   const result = await getModerationScores(assetId, {
     provider: "openai",
     thresholds: {
@@ -119,17 +119,17 @@ async function analyzeModeration(assetId: string) {
   console.log(`Status: ${status}`);
   console.log(`Max Sexual Score: ${(result.maxScores.sexual * 100).toFixed(1)}%`);
   console.log(`Max Violence Score: ${(result.maxScores.violence * 100).toFixed(1)}%`);
-  
+
   if (result.exceedsThreshold) {
     console.log("\n⚠️ This content may require manual review.");
   }
-  
+
   return result;
 }
 
 async function main() {
   const options = parseArgs();
-  
+
   console.log("═".repeat(60));
   console.log("🎬 Mux AI Video Analysis");
   console.log("═".repeat(60));
@@ -143,15 +143,15 @@ async function main() {
   }
 
   const analyses: Promise<unknown>[] = [];
-  
+
   if (options.summarize) {
     analyses.push(analyzeSummary(options.assetId, options.provider));
   }
-  
+
   if (options.chapters) {
     analyses.push(analyzeChapters(options.assetId, options.provider));
   }
-  
+
   if (options.moderate) {
     analyses.push(analyzeModeration(options.assetId));
   }
