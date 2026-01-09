@@ -80,7 +80,7 @@ MUX_DOCS_REPO_PATH=/path/to/mux.com \
 
 - `MUX_DOCS_REPO_PATH` (required): Path to local checkout of `muxinc/mux.com`
 - `MUX_DOCS_OUTPUT`: Output directory (default: `.claude/skills/mux-docs/reference`)
-- `MUX_DOCS_BASE_URL`: Base URL for source links (default: `https://docs.mux.com`)
+- `MUX_DOCS_BASE_URL`: Base URL for source links (default: `https://mux.com/docs`)
 - `MUX_DOCS_DIR`: Docs directory override
 
 ### CI/CD

@@ -27,7 +27,7 @@ const docsRepoPath = process.env.MUX_DOCS_REPO_PATH || path.resolve(process.cwd(
 const docsDir = process.env.MUX_DOCS_DIR || path.join(docsRepoPath, "apps", "web", "app", "docs");
 const outputPath = process.env.MUX_DOCS_OUTPUT || path.resolve(".claude/skills/mux-docs/reference");
 const skillMdPath = path.resolve(".claude/skills/mux-docs/SKILL.md");
-const baseUrl = process.env.MUX_DOCS_BASE_URL || "https://docs.mux.com";
+const baseUrl = process.env.MUX_DOCS_BASE_URL || "https://mux.com/docs";
 
 // Category metadata - describes what each category contains
 const CATEGORY_METADATA: Record<string, { display: string; description: string }> = {
