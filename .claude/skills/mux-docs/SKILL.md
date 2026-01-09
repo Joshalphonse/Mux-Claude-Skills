@@ -1,70 +1,108 @@
 ---
 name: mux-docs
-description: Answer Mux documentation questions via a local, build-time corpus generated from the mux.com docs repo.
+description: Answer questions about Mux Video, Live Streaming, Data APIs, and SDKs. Use when user asks about Mux features, implementation patterns, API usage, troubleshooting, or best practices. Covers playback, encoding, live streaming, analytics, security, and more.
 ---
 
-# Mux Docs Skill
+# Mux Documentation
 
-This skill answers "how do I..." questions about Mux by retrieving text from the official mux.com documentation. It builds a plain-text corpus from the private docs repo and uses it for grounded responses.
+Comprehensive reference documentation for Mux's video infrastructure platform.
 
-## Quick Start
+## Available Documentation
+
+The documentation is organized into the following categories:
+
+### Core Concepts
+Fundamentals, API basics, SDKs, webhooks, getting started guides
+
+**Location:** `reference/core/` (1 file)
+
+### Video Playback & Assets
+HLS/DASH streaming, players, playback policies, encoding, thumbnails, watermarks, captions
+
+**Location:** `reference/video/` (7 files)
+
+### Live Streaming
+Broadcasting, RTMP/SRT, stream keys, recording, DVR, latency optimization
+
+**Location:** `reference/live-streaming/` (68 files)
+
+### Security & Access Control
+Signed URLs, JWT signing, DRM protection, playback restrictions, authentication
+
+**Location:** `reference/security/` (40 files)
+
+### Upload & Ingestion
+Direct uploads, file ingestion, upload workflows, client-side uploaders
+
+**Location:** `reference/upload/` (11 files)
+
+### Data & Analytics
+QoS metrics, viewer analytics, custom dashboards, monitoring, alerts, webhooks
+
+**Location:** `reference/data-and-analytics/` (48 files)
+
+### Frameworks & Integrations
+React, Next.js, Vue, Laravel, CMS integrations, platform-specific SDKs
+
+**Location:** `reference/frameworks-and-integrations/` (36 files)
+
+### Miscellaneous
+Other documentation and guides
+
+**Location:** `reference/misc/` (1 file)
+
+## How to Use This Documentation
+
+### Browse by Category
+
+Navigate to a category directory and read relevant files:
 
 ```bash
-# 1) Point to your mux.com docs repo (private)
-export MUX_DOCS_REPO_PATH=/path/to/mux.com
+# List all files in a category
+ls .claude/skills/mux-docs/reference/video/
 
-# 2) Generate the corpus (writes data/mux-docs-corpus.json)
-npx tsx .claude/skills/mux-docs/scripts/build-docs-corpus.ts
-
-# 3) Use the corpus in your Claude tool or workflows
-# Inject top chunks into prompts for doc Q&A
+# Read a specific file
+cat .claude/skills/mux-docs/reference/security/signed-urls.md
 ```
 
-## Inputs
+### Search Across All Documentation
 
-- `MUX_DOCS_REPO_PATH` (required): Path to a local checkout of `muxinc/mux.com` (the repo containing `apps/web/app/docs`).
-- `MUX_DOCS_BASE_URL` (optional): Base URL for source links (default: `https://docs.mux.com`).
-- `MUX_DOCS_OUTPUT` (optional): Output path for the corpus JSON (default: `.claude/skills/mux-docs/data/mux-docs-corpus.json`).
-
-## What the Builder Does
-
-1. Walks `apps/web/app/docs` for `.md`/`.mdx` files.
-2. Reads frontmatter (title/order if present) and strips imports/JSX.
-3. Preserves code blocks, flattens Markdown to text, and drops raw HTML.
-4. Emits ordered entries with relative path, slug-based source URL, title, and cleaned content.
-
-## Using the Corpus
-
-- Embed and index the JSON entries, then retrieve top matches for a user question and inject them into the Claude prompt with citations (`sourceUrl`).
-- Keep the corpus fresh by rerunning the builder when docs change; consider pinning a repo commit for reproducibility.
-
-## Shipping a Prebuilt Corpus
-
-- Build locally, commit `.claude/skills/mux-docs/data/mux-docs-corpus.json`, and note the source docs commit/hash.
-- Optional: enable `.github/workflows/refresh-mux-docs-corpus.yml` with secrets:
-  - `CI_PUSH_TOKEN`: repo token with push rights (for committing corpus updates).
-  - `MUX_DOCS_REPO_URL`: clone URL for the private mux.com repo (read-only).
-- The workflow rebuilds weekly (cron) or on `workflow_dispatch`, commits changes if the corpus differs, and pushes.
-
-## Refresh Command
+Use grep to find topics across all files:
 
 ```bash
-MUX_DOCS_REPO_PATH=/path/to/mux.com \
-MUX_DOCS_OUTPUT=.claude/skills/mux-docs/data/mux-docs-corpus.json \
-npx tsx .claude/skills/mux-docs/scripts/build-docs-corpus.ts
+# Search for a keyword
+grep -ri "keyword" .claude/skills/mux-docs/reference/
+
+# Search within a specific category
+grep -ri "playback" .claude/skills/mux-docs/reference/video/
+
+# Find files mentioning a topic
+grep -l "webhook" .claude/skills/mux-docs/reference/*/*.md
+
+# Search with context lines
+grep -ri -C 3 "jwt" .claude/skills/mux-docs/reference/security/
 ```
 
-## Quick Test (local search helper)
-
-After building the corpus, you can sanity-check retrieval without embeddings:
+### Find Related Topics
 
 ```bash
-npx tsx .claude/skills/mux-docs/scripts/answer-doc-question.ts "how to add captions"
-# Uses .claude/skills/mux-docs/data/mux-docs-corpus.json by default
-# Override corpus path: MUX_DOCS_CORPUS_PATH=/path/to/corpus.json
+# Multiple keywords (AND)
+grep -ri "signed" .claude/skills/mux-docs/reference/ | grep "playback"
+
+# Multiple keywords (OR)
+grep -riE "(signed|drm|secure)" .claude/skills/mux-docs/reference/
 ```
 
-## Default Corpus Path for Claude Code
+## Documentation Format
 
-- Keep the corpus at `.claude/skills/mux-docs/data/mux-docs-corpus.json` so you can simply ask Mux doc questions and instruct Claude to use the “default docs corpus” without retyping the path.
-- If you need a different location, set `MUX_DOCS_CORPUS_PATH` before invoking any helpers or mention the alternate path once in your system/pinned note.
+Each markdown file contains:
+- **Title**: The document heading
+- **Source URL**: Link to the official Mux docs (always cite this when referencing)
+- **Content**: Cleaned documentation text with code examples
+
+## Best Practices
+
+1. **Always cite sources**: Include the Source URL when referencing documentation
+2. **Search first**: Use grep to find relevant docs before browsing
+3. **Check multiple files**: Related topics may be split across files
+4. **Follow cross-references**: Documents may reference each other for deeper details

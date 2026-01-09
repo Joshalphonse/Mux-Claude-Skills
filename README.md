@@ -1,3 +1,5 @@
+<div align="center">
+
 ```
 ███╗   ███╗██╗   ██╗██╗  ██╗     █████╗ ██╗
 ████╗ ████║██║   ██║╚██╗██╔╝    ██╔══██╗██║
@@ -5,8 +7,11 @@
 ██║╚██╔╝██║██║   ██║ ██╔██╗     ██╔══██║██║
 ██║ ╚═╝ ██║╚██████╔╝██╔╝╚██╗    ██║  ██║██║
 ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝    ╚═╝  ╚═╝╚═╝
-      AI-Powered Video Analysis & Docs Claude Skill
 ```
+
+**AI-Powered Video Analysis & Docs Claude Skill**
+
+</div>
 
 # Mux AI Claude Skill
 

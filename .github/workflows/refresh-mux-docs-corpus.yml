@@ -34,11 +34,12 @@ jobs:
       - name: Commit changes
         run: |
           set -e
-          git add .claude/skills/mux-docs/data/mux-docs-corpus.json
+          git add .claude/skills/mux-docs/reference/
+          git add .claude/skills/mux-docs/SKILL.md
           git diff --cached --quiet && exit 0
           git config user.name "mux-docs-bot"
           git config user.email "devnull@mux.com"
-          git commit -m "chore: refresh mux docs corpus"
+          git commit -m "chore: refresh mux docs reference library"
 
       - name: Push
         if: success()
