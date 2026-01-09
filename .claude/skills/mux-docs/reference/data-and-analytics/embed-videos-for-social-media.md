@@ -1,6 +1,6 @@
 # Embed videos for social media
 
-**Source:** https://docs.mux.com/_guides/developer/embed-videos-for-social-media
+**Source:** https://mux.com/docs/developer/embed-videos-for-social-media
 
 Introduction to Open Graph
 

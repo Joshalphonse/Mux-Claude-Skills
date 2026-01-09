@@ -1,6 +1,6 @@
 # Samsung-Tizen
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-samsung-tizen
+**Source:** https://mux.com/docs/developer/monitor-samsung-tizen
 
 Mux Data is the best way to monitor video streaming performance.
 

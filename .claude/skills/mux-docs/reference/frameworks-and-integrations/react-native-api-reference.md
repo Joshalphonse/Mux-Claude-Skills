@@ -1,6 +1,6 @@
 # API Reference for React Native
 
-**Source:** https://docs.mux.com/_guides/frameworks/react-native-api-reference
+**Source:** https://mux.com/docs/frameworks/react-native-api-reference
 
 API Reference for React Native
 

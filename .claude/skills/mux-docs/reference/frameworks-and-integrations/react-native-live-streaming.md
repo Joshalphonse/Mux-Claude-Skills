@@ -1,6 +1,6 @@
 # Live Streaming
 
-**Source:** https://docs.mux.com/_guides/frameworks/react-native-live-streaming
+**Source:** https://mux.com/docs/frameworks/react-native-live-streaming
 
 Live Streaming
 

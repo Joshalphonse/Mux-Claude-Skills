@@ -1,6 +1,6 @@
 # Add subtitles/captions to videos
 
-**Source:** https://docs.mux.com/_guides/developer/add-subtitles-to-your-videos
+**Source:** https://mux.com/docs/developer/add-subtitles-to-your-videos
 
 Introduction to subtitles and captions
 

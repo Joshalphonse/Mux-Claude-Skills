@@ -1,6 +1,6 @@
 # Custom Java integration
 
-**Source:** https://docs.mux.com/_guides/developer/data-custom-java-integration
+**Source:** https://mux.com/docs/developer/data-custom-java-integration
 
 Mux has a pre-built integration with Google's ExoPlayer v2 and Android Media Player for Android applications.
 

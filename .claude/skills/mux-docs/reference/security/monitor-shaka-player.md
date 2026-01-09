@@ -1,6 +1,6 @@
 # Monitor Shaka player
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-shaka-player
+**Source:** https://mux.com/docs/developer/monitor-shaka-player
 
 Include the Mux JavaScript SDK on every page of your web app that includes video.
 

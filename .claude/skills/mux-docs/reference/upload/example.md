@@ -1,6 +1,6 @@
 # Guide to writing guides
 
-**Source:** https://docs.mux.com/_guides/developer/example
+**Source:** https://mux.com/docs/developer/example
 
 Clone the repo muxinc/docs.mux.com. Follow instructions in the README to get the project runnig locally. After you have it running, you're ready to create a new guide.
 

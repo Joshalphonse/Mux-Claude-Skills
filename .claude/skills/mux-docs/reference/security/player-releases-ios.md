@@ -1,6 +1,6 @@
 # Mux Player for iOS releases
 
-**Source:** https://docs.mux.com/_guides/developer/player-releases-ios
+**Source:** https://mux.com/docs/developer/player-releases-ios
 
 Current release
 

@@ -1,6 +1,6 @@
 # Custom JavaScript integration
 
-**Source:** https://docs.mux.com/_guides/developer/data-custom-javascript-integration
+**Source:** https://mux.com/docs/developer/data-custom-javascript-integration
 
 Mux has a pre-built integration with many HTML5-based video players that are available in the market. Check the SDKs in the Track your video performance guide to see if there is not a pre-built integration for your player.
 

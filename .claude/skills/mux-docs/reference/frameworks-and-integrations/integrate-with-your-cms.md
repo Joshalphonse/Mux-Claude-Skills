@@ -1,6 +1,6 @@
 # Integrate with your CMS
 
-**Source:** https://docs.mux.com/_guides/integrations/cms
+**Source:** https://mux.com/docs/integrations/cms
 
 While Mux stores basic video metadata like titles and creator IDs, a content management system (CMS) can help you manage additional content around your videos - like descriptions, categories, related content, and other rich metadata that helps organize your video content within your application's broader content strategy.
 

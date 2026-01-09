@@ -1,6 +1,6 @@
 # _guides/snippets/sdk-web-customize-error-tracking
 
-**Source:** https://docs.mux.com/_guides/snippets/sdk-web-customize-error-tracking
+**Source:** https://mux.com/docs/snippets/sdk-web-customize-error-tracking
 
 When triggering an error event, it is important to provide values for player_error_code and player_error_message. The player_error_message should provide a generalized description of the error as it happened. The player_error_code must be an integer, and should provide a category of the error. If the errors match up with the HTML Media Element Error, you can use the same codes as the corresponding HTML errors. However, for custom errors, you should choose a number greater than or equal to 100.
 

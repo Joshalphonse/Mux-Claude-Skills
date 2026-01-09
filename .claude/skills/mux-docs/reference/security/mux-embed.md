@@ -1,6 +1,6 @@
 # _guides/snippets/changelogs/mux-embed
 
-**Source:** https://docs.mux.com/_guides/snippets/changelogs/mux-embed
+**Source:** https://mux.com/docs/snippets/changelogs/mux-embed
 
 Current release
 

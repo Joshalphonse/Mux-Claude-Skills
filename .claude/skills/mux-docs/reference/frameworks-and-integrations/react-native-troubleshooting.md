@@ -1,6 +1,6 @@
 # Troubleshooting & FAQ
 
-**Source:** https://docs.mux.com/_guides/frameworks/react-native-troubleshooting
+**Source:** https://mux.com/docs/frameworks/react-native-troubleshooting
 
 Troubleshooting & FAQ
 

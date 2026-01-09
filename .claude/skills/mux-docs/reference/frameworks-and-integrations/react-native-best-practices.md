@@ -1,6 +1,6 @@
 # Best Practices & Optimization
 
-**Source:** https://docs.mux.com/_guides/frameworks/react-native-best-practices
+**Source:** https://mux.com/docs/frameworks/react-native-best-practices
 
 Best Practices & Optimization
 

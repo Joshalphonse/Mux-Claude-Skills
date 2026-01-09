@@ -1,6 +1,6 @@
 # Customize the look and feel of Mux Uploader
 
-**Source:** https://docs.mux.com/_guides/developer/uploader-web-customize-look-and-feel
+**Source:** https://mux.com/docs/developer/uploader-web-customize-look-and-feel
 
 Configure UI features
 

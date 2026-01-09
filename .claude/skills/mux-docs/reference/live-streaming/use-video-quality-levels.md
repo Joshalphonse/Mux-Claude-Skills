@@ -1,6 +1,6 @@
 # Use different video quality levels
 
-**Source:** https://docs.mux.com/_guides/developer/use-video-quality-levels
+**Source:** https://mux.com/docs/developer/use-video-quality-levels
 
 We recently renamed encoding tiers to video quality levels. Read the blog for more details.
 

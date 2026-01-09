@@ -1,6 +1,6 @@
 # Overall Viewer Experience
 
-**Source:** https://docs.mux.com/_guides/developer/data-overall-viewer-experience-metric
+**Source:** https://mux.com/docs/developer/data-overall-viewer-experience-metric
 
 <Image
   alt="Overall Viewer Experience dashboard"

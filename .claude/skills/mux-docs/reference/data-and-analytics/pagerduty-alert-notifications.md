@@ -1,6 +1,6 @@
 # PagerDuty Alert Notifications
 
-**Source:** https://docs.mux.com/_guides/developer/pagerduty-alert-notifications
+**Source:** https://mux.com/docs/developer/pagerduty-alert-notifications
 
 How the integration works
 

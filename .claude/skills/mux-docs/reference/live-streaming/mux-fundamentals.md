@@ -1,6 +1,6 @@
 # Mux fundamentals
 
-**Source:** https://docs.mux.com/_guides/core/mux-fundamentals
+**Source:** https://mux.com/docs/core/mux-fundamentals
 
 Whether you're just getting started with Mux or need a quick refresher on how the pieces fit together, this guide covers the fundamental concepts you'll encounter when building video, audio, and live streaming applications.
 

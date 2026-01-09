@@ -1,6 +1,6 @@
 # Custom Objective-C integration
 
-**Source:** https://docs.mux.com/_guides/developer/data-custom-objectivec-integration
+**Source:** https://mux.com/docs/developer/data-custom-objectivec-integration
 
 Mux has a pre-built integration with Apple's AVPlayer for iOS and tvOS applications; for these players, see here: iOS Integration Guide.
 

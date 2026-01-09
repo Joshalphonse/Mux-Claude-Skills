@@ -1,6 +1,6 @@
 # Monitor Android MediaPlayer
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-android-media-player
+**Source:** https://mux.com/docs/developer/monitor-android-media-player
 
 This documents integration instructions for Android's MediaPlayer class. This integration supports Android 4.2 (API level 17) and newer, though older versions of Android have spotty support for streaming protocols such as HLS and Dash.
 

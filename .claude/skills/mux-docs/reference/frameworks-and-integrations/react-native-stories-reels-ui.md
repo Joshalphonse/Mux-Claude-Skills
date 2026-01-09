@@ -1,6 +1,6 @@
 # Build a Stories/Reels UI in React Native
 
-**Source:** https://docs.mux.com/_guides/frameworks/react-native-stories-reels-ui
+**Source:** https://mux.com/docs/frameworks/react-native-stories-reels-ui
 
 This guide shows you how to build a vertical, full-screen video feed similar to Instagram Stories, TikTok, or Snapchat Spotlight. Users swipe up and down to navigate between videos, with automatic playback and gesture controls.
 

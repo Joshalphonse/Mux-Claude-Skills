@@ -1,6 +1,6 @@
 # Monitor NexPlayer
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-nexplayer
+**Source:** https://mux.com/docs/developer/monitor-nexplayer
 
 Third-party integration
   This integration is managed and operated by NexPlayer.

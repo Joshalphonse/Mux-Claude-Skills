@@ -1,6 +1,6 @@
 # Add high-performance video to your Ruby application
 
-**Source:** https://docs.mux.com/_guides/integrations/mux-ruby-sdk
+**Source:** https://mux.com/docs/integrations/mux-ruby-sdk
 
 Installation
 

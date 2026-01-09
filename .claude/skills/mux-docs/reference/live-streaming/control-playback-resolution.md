@@ -1,6 +1,6 @@
 # Control playback resolution
 
-**Source:** https://docs.mux.com/_guides/developer/control-playback-resolution
+**Source:** https://mux.com/docs/developer/control-playback-resolution
 
 Default playback URL
 

@@ -1,6 +1,6 @@
 # _guides/snippets/sdk-web-changing-the-video
 
-**Source:** https://docs.mux.com/_guides/snippets/sdk-web-changing-the-video
+**Source:** https://mux.com/docs/snippets/sdk-web-changing-the-video
 
 There are two cases where the underlying tracking of the video view need to be reset:
 

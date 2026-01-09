@@ -1,6 +1,6 @@
 # Stream export data to an Amazon Kinesis data stream
 
-**Source:** https://docs.mux.com/_guides/developer/export-amazon-kinesis-data-streams
+**Source:** https://mux.com/docs/developer/export-amazon-kinesis-data-streams
 
 Streaming Exports are available on Mux Data Media plans. Learn more about Mux Data Plans or contact support.
 

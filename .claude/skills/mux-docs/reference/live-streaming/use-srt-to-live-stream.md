@@ -1,6 +1,6 @@
 # Use SRT to live stream
 
-**Source:** https://docs.mux.com/_guides/developer/use-srt-to-live-stream
+**Source:** https://mux.com/docs/developer/use-srt-to-live-stream
 
 SRT is a modern, common alternative to RTMP and is designed for high-quality, reliable point-to-point video transmission over unreliable networks.
 

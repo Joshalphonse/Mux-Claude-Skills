@@ -1,6 +1,6 @@
 # Stream videos in five minutes
 
-**Source:** https://docs.mux.com/_guides/core/stream-video-files
+**Source:** https://mux.com/docs/core/stream-video-files
 
 The Mux Video API uses a token key pair that consists of a Token ID and Token Secret for authentication. If you haven't already, generate a new Access Token in the Access Token settings of your Mux account dashboard.
 

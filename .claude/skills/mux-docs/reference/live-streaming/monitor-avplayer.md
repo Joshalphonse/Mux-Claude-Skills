@@ -1,6 +1,6 @@
 # Monitor AVPlayer
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-avplayer
+**Source:** https://mux.com/docs/developer/monitor-avplayer
 
 Mux Data integration for AVPlayer supports applications running on iOS 12.0 or newer, tvOS 12.0 or newer, and Mac Catalyst that use AVPlayerViewController, AVPlayerLayer, or a standalone AVPlayer playing audio or if presented with a fixed size. Applications running on visionOS 1.0 and higher are also supported if they use AVPlayerViewController or a standalone AVPlayer playing audio or if presented with a fixed size.
 

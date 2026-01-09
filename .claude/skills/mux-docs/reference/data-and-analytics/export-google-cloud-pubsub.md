@@ -1,6 +1,6 @@
 # Stream export data to a Google Cloud Pub/Sub topic
 
-**Source:** https://docs.mux.com/_guides/developer/export-google-cloud-pubsub
+**Source:** https://mux.com/docs/developer/export-google-cloud-pubsub
 
 Streaming Exports are available on Mux Data Media plans. Learn more about Mux Data Plans or contact support.
 

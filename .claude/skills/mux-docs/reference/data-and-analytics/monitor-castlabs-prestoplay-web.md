@@ -1,6 +1,6 @@
 # Monitor castLabs Player (Web)
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-castlabs-prestoplay-web
+**Source:** https://mux.com/docs/developer/monitor-castlabs-prestoplay-web
 
 This integration is managed and operated by castLabs.
   Feedback should be made by using the contact form or creating a ticket in the General Helpdesk.

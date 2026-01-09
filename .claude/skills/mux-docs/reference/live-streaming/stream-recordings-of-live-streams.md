@@ -1,6 +1,6 @@
 # Stream recordings of live streams
 
-**Source:** https://docs.mux.com/_guides/developer/stream-recordings-of-live-streams
+**Source:** https://mux.com/docs/developer/stream-recordings-of-live-streams
 
 When playing back a live stream, Mux offers you two options for historical playback. Both options are available at any time; you can switch between the two at will.
 

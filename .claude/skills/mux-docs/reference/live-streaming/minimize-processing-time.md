@@ -1,6 +1,6 @@
 # Minimize processing time
 
-**Source:** https://docs.mux.com/_guides/developer/minimize-processing-time
+**Source:** https://mux.com/docs/developer/minimize-processing-time
 
 Mux Video accepts most modern video formats and codecs. However, certain types of inputs need to be standardized in order for Mux to do further operations on them, and this can add time before the video is ready to be streamed. If you want to standardize your content before sending it to Mux, and potentially improve performance, this guide will show what you need to do.
 

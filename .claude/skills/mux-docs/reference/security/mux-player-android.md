@@ -1,6 +1,6 @@
 # Mux Player for Android
 
-**Source:** https://docs.mux.com/_guides/developer/mux-player-android
+**Source:** https://mux.com/docs/developer/mux-player-android
 
 The Mux Player SDK is a thin wrapper on top of Google's media3 player SDK with convenient tools for Mux Video users. This SDK is not required to use Mux Video, but it can help you do things like controlling your data and delivery usage, playing Mux assets by ID, automatically supporting player features like caching, and transparently tracking performance and engagement with Mux Data
 

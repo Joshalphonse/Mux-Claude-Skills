@@ -1,6 +1,6 @@
 # Report on your Mux costs
 
-**Source:** https://docs.mux.com/_guides/pricing/report-on-mux-costs
+**Source:** https://mux.com/docs/pricing/report-on-mux-costs
 
 Mux provides a billing breakdown which gives you transparency into your Mux costs, with historical context that helps you spot trends and make informed decisions. From this page, you can chart your costs and purchases over time, track your plan credit spending, and see your credit balances. It includes information about your last six billing cycles. Any invoices that have been issued in the six most recent billing cycles are shown but it does not include usage in the current cycle that has not yet been invoiced.
 

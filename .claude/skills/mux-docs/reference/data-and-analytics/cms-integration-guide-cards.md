@@ -1,6 +1,6 @@
 # _guides/snippets/cms-integration-guide-cards
 
-**Source:** https://docs.mux.com/_guides/snippets/cms-integration-guide-cards
+**Source:** https://mux.com/docs/snippets/cms-integration-guide-cards
 
 <GuideCard
     title="Set up playback"

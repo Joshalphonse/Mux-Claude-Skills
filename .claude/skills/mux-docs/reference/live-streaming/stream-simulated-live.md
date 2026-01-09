@@ -1,6 +1,6 @@
 # Stream simulated live
 
-**Source:** https://docs.mux.com/_guides/developer/stream-simulated-live
+**Source:** https://mux.com/docs/developer/stream-simulated-live
 
 - Pre-Recorded Live
   - Scheduled Live

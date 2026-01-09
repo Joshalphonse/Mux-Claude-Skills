@@ -1,6 +1,6 @@
 # Moderate video content
 
-**Source:** https://docs.mux.com/_guides/examples/moderate-video-content
+**Source:** https://mux.com/docs/examples/moderate-video-content
 
 If your platform accepts user-generated content in any form, you know that people will upload everything and anything. For video this can be particularly high stakes, with the potential for users to upload anything from popular media content to inappropriate footage.
 

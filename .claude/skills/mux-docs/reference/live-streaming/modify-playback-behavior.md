@@ -1,6 +1,6 @@
 # Modify playback behavior
 
-**Source:** https://docs.mux.com/_guides/developer/modify-playback-behavior
+**Source:** https://mux.com/docs/developer/modify-playback-behavior
 
 Playback modifiers are optional parameters added to the video playback URL. These modifiers allow you to change the behavior of the stream you receive from Mux.
 

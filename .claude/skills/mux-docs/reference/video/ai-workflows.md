@@ -1,6 +1,6 @@
 # Use Mux in AI Workflows
 
-**Source:** https://docs.mux.com/_guides/examples/ai-workflows
+**Source:** https://mux.com/docs/examples/ai-workflows
 
 The workflows below are all powered by @mux/ai, our open-source library that provides prebuilt workflows for common video AI tasks. It works with your favorite LLM provider (OpenAI, Anthropic, or Google). Check out the GitHub repository for more details!
 

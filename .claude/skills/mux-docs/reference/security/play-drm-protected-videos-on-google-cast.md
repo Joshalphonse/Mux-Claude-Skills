@@ -1,6 +1,6 @@
 # Play DRM protected videos on Google Cast Devices
 
-**Source:** https://docs.mux.com/_guides/developer/play-drm-protected-videos-on-google-cast
+**Source:** https://mux.com/docs/developer/play-drm-protected-videos-on-google-cast
 
 Google Cast is a popular method for sending video from one device to be played on another, often from a phone to a TV. Most players support Google Cast out of the box, but if your video is protected by DRM, you will need to do a little more work.
 

@@ -1,6 +1,6 @@
 # Add high-performance video to your C# application
 
-**Source:** https://docs.mux.com/_guides/integrations/mux-csharp-sdk
+**Source:** https://mux.com/docs/integrations/mux-csharp-sdk
 
 Frameworks supported
 - .NET Core >=1.0

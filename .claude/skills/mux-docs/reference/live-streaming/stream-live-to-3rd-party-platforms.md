@@ -1,6 +1,6 @@
 # Stream live to 3rd party platforms
 
-**Source:** https://docs.mux.com/_guides/developer/stream-live-to-3rd-party-platforms
+**Source:** https://mux.com/docs/developer/stream-live-to-3rd-party-platforms
 
 With the Simulcasting feature, developers can enable their users publish live streams on social platforms.
 

@@ -1,6 +1,6 @@
 # Monitor Chromecast
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-chromecast
+**Source:** https://mux.com/docs/developer/monitor-chromecast
 
 Mux Data is the best way to monitor video streaming performance.
 

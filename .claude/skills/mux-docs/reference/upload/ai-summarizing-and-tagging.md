@@ -1,6 +1,6 @@
 # Summarizing and tagging videos with AI
 
-**Source:** https://docs.mux.com/_guides/examples/ai-summarizing-and-tagging
+**Source:** https://mux.com/docs/examples/ai-summarizing-and-tagging
 
 This guide uses @mux/ai, our open-source library that provides prebuilt workflows for common video AI tasks. It works with your favorite LLM provider (OpenAI, Anthropic, or Google). Check out the GitHub repository for more details!
 

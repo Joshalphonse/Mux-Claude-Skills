@@ -1,6 +1,6 @@
 # Track video analytics with Mux Data
 
-**Source:** https://docs.mux.com/_guides/frameworks/react-native-mux-data-analytics
+**Source:** https://mux.com/docs/frameworks/react-native-mux-data-analytics
 
 Mux Data provides analytics for your video playback, helping you understand video performance and user engagement. This guide shows you how to integrate Mux Data with React Native and display metrics like view counts in your app.
 

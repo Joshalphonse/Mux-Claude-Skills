@@ -1,6 +1,6 @@
 # Smoothness
 
-**Source:** https://docs.mux.com/_guides/developer/data-smoothness-metric
+**Source:** https://mux.com/docs/developer/data-smoothness-metric
 
 <Image
   alt="Smoothness Dashboard"

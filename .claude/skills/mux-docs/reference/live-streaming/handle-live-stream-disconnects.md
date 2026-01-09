@@ -1,6 +1,6 @@
 # Handle Live Stream Disconnects
 
-**Source:** https://docs.mux.com/_guides/developer/handle-live-stream-disconnects
+**Source:** https://mux.com/docs/developer/handle-live-stream-disconnects
 
 Before reading this guide, you created and set up a Live Stream by following these steps:
 

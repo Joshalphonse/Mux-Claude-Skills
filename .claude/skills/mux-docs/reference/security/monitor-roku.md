@@ -1,6 +1,6 @@
 # Monitor Roku
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-roku
+**Source:** https://mux.com/docs/developer/monitor-roku
 
 Mux's Roku integration supports Roku SceneGraph applications, in conjunction with standard Video nodes. Mux runs as a Task alongside the Video node, and supports instances where the Video nodes are reused with additional content as well as when the Video nodes are reset between content.
 

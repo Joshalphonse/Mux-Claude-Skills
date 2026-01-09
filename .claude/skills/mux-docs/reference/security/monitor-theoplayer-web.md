@@ -1,6 +1,6 @@
 # Monitor THEOplayer (Web)
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-theoplayer-web
+**Source:** https://mux.com/docs/developer/monitor-theoplayer-web
 
 Include the Mux JavaScript SDK on every page of your web app that includes video.
 

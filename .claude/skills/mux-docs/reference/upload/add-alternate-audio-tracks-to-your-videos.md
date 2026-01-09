@@ -1,6 +1,6 @@
 # Add alternate audio tracks to videos
 
-**Source:** https://docs.mux.com/_guides/developer/add-alternate-audio-tracks-to-your-videos
+**Source:** https://mux.com/docs/developer/add-alternate-audio-tracks-to-your-videos
 
 Introduction to multi-track audio
 

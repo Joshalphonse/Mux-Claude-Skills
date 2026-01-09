@@ -1,6 +1,6 @@
 # Add metadata to your videos
 
-**Source:** https://docs.mux.com/_guides/developer/add-video-metadata
+**Source:** https://mux.com/docs/developer/add-video-metadata
 
 Metadata provides additional descriptive information about your video assets. Mux currently supports three key optional metadata fields that help you organize and manage your video content across the API and dashboard:
 

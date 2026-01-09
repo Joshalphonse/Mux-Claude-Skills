@@ -1,6 +1,6 @@
 # Add watermarks to your videos
 
-**Source:** https://docs.mux.com/_guides/developer/add-watermarks-to-your-videos
+**Source:** https://mux.com/docs/developer/add-watermarks-to-your-videos
 
 A watermark is an image overlaid on a video, often used to brand a video or visually label a specific version of a video.
 

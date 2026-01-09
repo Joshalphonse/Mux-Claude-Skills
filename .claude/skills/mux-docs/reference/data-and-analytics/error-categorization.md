@@ -1,6 +1,6 @@
 # Focus your operational response with error categorization
 
-**Source:** https://docs.mux.com/_guides/developer/error-categorization
+**Source:** https://mux.com/docs/developer/error-categorization
 
 Error Categorization allows you to set custom error metadata to provide more actionable data. By using error categorization, you can distinguish between fatal errors or warnings and classify errors as playback failures or business exceptions. Errors categorized as warnings or as business exceptions are not considered playback failures, meaning these errors are excluded from alerting, giving a more accurate picture of the health of your system with less noise from alerts.
 

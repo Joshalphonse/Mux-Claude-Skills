@@ -1,6 +1,6 @@
 # _guides/snippets/env-key-callout
 
-**Source:** https://docs.mux.com/_guides/snippets/env-key-callout
+**Source:** https://mux.com/docs/snippets/env-key-callout
 
 Get your ENV_KEY from the Mux environments dashboard.
 

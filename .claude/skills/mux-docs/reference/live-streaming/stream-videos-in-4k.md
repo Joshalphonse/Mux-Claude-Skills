@@ -1,6 +1,6 @@
 # Stream videos in 4K
 
-**Source:** https://docs.mux.com/_guides/developer/stream-videos-in-4k
+**Source:** https://mux.com/docs/developer/stream-videos-in-4k
 
 Introduction to 4K
 

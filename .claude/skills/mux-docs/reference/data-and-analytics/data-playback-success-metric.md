@@ -1,6 +1,6 @@
 # Playback Success
 
-**Source:** https://docs.mux.com/_guides/developer/data-playback-success-metric
+**Source:** https://mux.com/docs/developer/data-playback-success-metric
 
 <Image
   alt="Playback Success"

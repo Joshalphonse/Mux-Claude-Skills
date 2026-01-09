@@ -1,6 +1,6 @@
 # Control recording resolution
 
-**Source:** https://docs.mux.com/_guides/developer/control-recording-resolution
+**Source:** https://mux.com/docs/developer/control-recording-resolution
 
 Android
 The way you control the resolution of a recorded video depends on the API used to record or encode it. All of Google's major camera and recording APIs have a method for setting either the exact or maximum resolution of the videos they create.

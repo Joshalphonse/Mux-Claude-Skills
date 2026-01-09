@@ -1,6 +1,6 @@
 # Create instant clips
 
-**Source:** https://docs.mux.com/_guides/developer/create-instant-clips
+**Source:** https://mux.com/docs/developer/create-instant-clips
 
 Use cases for instant clipping
 

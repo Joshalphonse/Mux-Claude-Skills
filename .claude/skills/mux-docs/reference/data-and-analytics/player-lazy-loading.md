@@ -1,6 +1,6 @@
 # Lazy-loading Mux Player
 
-**Source:** https://docs.mux.com/_guides/developer/player-lazy-loading
+**Source:** https://mux.com/docs/developer/player-lazy-loading
 
 Installation
 

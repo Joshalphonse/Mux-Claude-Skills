@@ -1,6 +1,6 @@
 # Upload files directly
 
-**Source:** https://docs.mux.com/_guides/developer/upload-files-directly
+**Source:** https://mux.com/docs/developer/upload-files-directly
 
 Overview
 

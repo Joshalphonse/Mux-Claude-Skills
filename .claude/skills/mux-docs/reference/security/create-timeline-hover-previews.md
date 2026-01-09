@@ -1,6 +1,6 @@
 # Create timeline hover previews
 
-**Source:** https://docs.mux.com/_guides/developer/create-timeline-hover-previews
+**Source:** https://mux.com/docs/developer/create-timeline-hover-previews
 
 What are timeline hover previews?
 

@@ -1,6 +1,6 @@
 # Monitor Brightcove (Web)
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-brightcove-web
+**Source:** https://mux.com/docs/developer/monitor-brightcove-web
 
 Either include the Mux JavaScript SDK for video.js (videojs-mux) either via the Brightcove Studio by adding the script https://src.litix.io/videojs/4/videojs-mux.js as a new JavaScript line in your Plugins configuration or load videojs-mux from the CDN on your web pages.
 

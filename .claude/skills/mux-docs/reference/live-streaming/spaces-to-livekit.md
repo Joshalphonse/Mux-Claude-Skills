@@ -1,6 +1,6 @@
 # Migrate to LiveKit Web SDK
 
-**Source:** https://docs.mux.com/_guides/developer/spaces-to-livekit
+**Source:** https://mux.com/docs/developer/spaces-to-livekit
 
 LiveKit provides real-time video services, including both an open-source stack and a cloud-hosted option,
 and will provide a simple integration with Mux to produce a Live Stream broadcast of any real-time video interactions.

@@ -1,6 +1,6 @@
 # Synchronize video playback
 
-**Source:** https://docs.mux.com/_guides/examples/synchronize-video-playback
+**Source:** https://mux.com/docs/examples/synchronize-video-playback
 
 Introduction to video playback synchronization
 

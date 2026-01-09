@@ -1,6 +1,6 @@
 # Monitor THEOplayer
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-theoplayer-android
+**Source:** https://mux.com/docs/developer/monitor-theoplayer-android
 
 This documents integration instructions for THEO Technologies' THEOplayer library
 

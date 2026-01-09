@@ -1,6 +1,6 @@
 # Monitor Bitmovin player
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-bitmovin-player
+**Source:** https://mux.com/docs/developer/monitor-bitmovin-player
 
 Include the Mux JavaScript SDK on every page of your web app that includes video.
 

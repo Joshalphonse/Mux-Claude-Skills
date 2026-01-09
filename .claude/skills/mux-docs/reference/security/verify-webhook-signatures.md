@@ -1,6 +1,6 @@
 # Verify webhook signatures
 
-**Source:** https://docs.mux.com/_guides/core/verify-webhook-signatures
+**Source:** https://mux.com/docs/core/verify-webhook-signatures
 
 Obtain your signing secret
 

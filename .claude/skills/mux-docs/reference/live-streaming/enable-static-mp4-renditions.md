@@ -1,6 +1,6 @@
 # Use static MP4 and M4A renditions
 
-**Source:** https://docs.mux.com/_guides/developer/enable-static-mp4-renditions
+**Source:** https://mux.com/docs/developer/enable-static-mp4-renditions
 
 This guide covers using static_renditions to create MP4 files, which replaces the deprecated mp4_support method. While mp4_support continues to function, we recommend using static_renditions for all new implementations.
 

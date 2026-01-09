@@ -1,6 +1,6 @@
 # Signing JWTs
 
-**Source:** https://docs.mux.com/_guides/developer/signing-jwts
+**Source:** https://mux.com/docs/developer/signing-jwts
 
 What is a JWT?
 JWTs are made up of a header, a payload, and a signature. The header contains metadata useful for decrypting the rest of the token. The payload contains configuration options. And the signature is generated from a signing key-pair. More information can be found at jwt.io.

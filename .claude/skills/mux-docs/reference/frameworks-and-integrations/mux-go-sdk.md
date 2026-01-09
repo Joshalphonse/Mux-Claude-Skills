@@ -1,6 +1,6 @@
 # Add high-performance video to your Go application
 
-**Source:** https://docs.mux.com/_guides/integrations/mux-go-sdk
+**Source:** https://mux.com/docs/integrations/mux-go-sdk
 
 Installation
 

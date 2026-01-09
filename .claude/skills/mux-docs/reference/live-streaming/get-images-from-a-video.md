@@ -1,6 +1,6 @@
 # Get thumbnails and images from a video
 
-**Source:** https://docs.mux.com/_guides/developer/get-images-from-a-video
+**Source:** https://mux.com/docs/developer/get-images-from-a-video
 
 To get an image from Mux, use a playback_id to make a request to image.mux.com in the following format:
 

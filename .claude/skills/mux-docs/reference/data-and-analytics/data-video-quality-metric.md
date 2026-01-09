@@ -1,6 +1,6 @@
 # Video Quality
 
-**Source:** https://docs.mux.com/_guides/developer/data-video-quality-metric
+**Source:** https://mux.com/docs/developer/data-video-quality-metric
 
 <Image
   alt="Video Quality Dashboard"

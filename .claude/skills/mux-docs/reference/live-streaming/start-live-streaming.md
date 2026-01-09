@@ -1,6 +1,6 @@
 # Start live streaming
 
-**Source:** https://docs.mux.com/_guides/developer/start-live-streaming
+**Source:** https://mux.com/docs/developer/start-live-streaming
 
 Whether you’re looking to build “Twitch for X”, online classrooms, a news & sports broadcasting platform or something the world’s never seen before, the Mux Live Streaming API  makes it easy to build live video into your own software. With a simple API call you get everything you need to push a live stream and play it back at high quality for a global audience.
 

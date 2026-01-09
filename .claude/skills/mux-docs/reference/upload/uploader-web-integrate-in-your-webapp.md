@@ -1,6 +1,6 @@
 # Integrate Mux Uploader into your web application
 
-**Source:** https://docs.mux.com/_guides/developer/uploader-web-integrate-in-your-webapp
+**Source:** https://mux.com/docs/developer/uploader-web-integrate-in-your-webapp
 
 Install Mux Uploader
 

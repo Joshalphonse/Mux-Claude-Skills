@@ -1,6 +1,6 @@
 # Choose a theme for Mux Player
 
-**Source:** https://docs.mux.com/_guides/developer/player-themes
+**Source:** https://mux.com/docs/developer/player-themes
 
 Mux Player is built on top of Media Chrome
 that comes with simple but powerful theming

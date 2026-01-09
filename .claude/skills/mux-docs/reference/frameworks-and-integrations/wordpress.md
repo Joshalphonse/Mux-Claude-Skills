@@ -1,6 +1,6 @@
 # Integrate with WordPress
 
-**Source:** https://docs.mux.com/_guides/integrations/wordpress
+**Source:** https://mux.com/docs/integrations/wordpress
 
 This guide explains how to integrate Mux with WordPress using the Mux Video Uploader plugin by 2Coders. This integration enables you to leverage Mux's powerful video infrastructure while maintaining the familiar WordPress content management experience.
 

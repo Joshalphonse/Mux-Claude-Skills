@@ -1,6 +1,6 @@
 # Secure video playback
 
-**Source:** https://docs.mux.com/_guides/developer/secure-video-playback
+**Source:** https://mux.com/docs/developer/secure-video-playback
 
 If you add an asset or start a live stream through Mux without passing a playback policy, you'll be unable to access it in your browser using a URL. This may seem counterintuitive at first, however, this gives you the ability to be explicit about who can access your content, as well as exactly how, where, or when they can access it.
 

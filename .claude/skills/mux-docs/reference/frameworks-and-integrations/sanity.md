@@ -1,6 +1,6 @@
 # Integrate with Sanity
 
-**Source:** https://docs.mux.com/_guides/integrations/sanity
+**Source:** https://mux.com/docs/integrations/sanity
 
 This guide assumes you already have a Sanity Studio set up. If you haven't created your Sanity Studio yet, follow the Sanity Studio quickstart guide to get started.
 

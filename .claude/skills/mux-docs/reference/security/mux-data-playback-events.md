@@ -1,6 +1,6 @@
 # Mux playback events
 
-**Source:** https://docs.mux.com/_guides/developer/mux-data-playback-events
+**Source:** https://mux.com/docs/developer/mux-data-playback-events
 
 Playback events overview
 

@@ -1,6 +1,6 @@
 # Mux Uploader for web
 
-**Source:** https://docs.mux.com/_guides/developer/mux-uploader
+**Source:** https://mux.com/docs/developer/mux-uploader
 
 Mux Uploader is a drop-in web component that makes it easy to upload video files to Mux.
 

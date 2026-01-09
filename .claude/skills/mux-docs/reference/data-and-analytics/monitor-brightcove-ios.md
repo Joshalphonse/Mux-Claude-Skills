@@ -1,6 +1,6 @@
 # Monitor Brightcove (iOS)
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-brightcove-ios
+**Source:** https://mux.com/docs/developer/monitor-brightcove-ios
 
 Brightcove's native SDK for iOS is based on AVPlayerLayer. You will need to be using Brightcove's iOS player version 6.x.
 

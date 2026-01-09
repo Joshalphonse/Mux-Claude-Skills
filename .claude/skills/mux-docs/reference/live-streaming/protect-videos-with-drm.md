@@ -1,6 +1,6 @@
 # Protect videos with DRM
 
-**Source:** https://docs.mux.com/_guides/developer/protect-videos-with-drm
+**Source:** https://mux.com/docs/developer/protect-videos-with-drm
 
 Check out our blog on "What is DRM" to learn more about the concepts of DRM.
 

@@ -1,6 +1,6 @@
 # Make API requests with Postman
 
-**Source:** https://docs.mux.com/_guides/core/postman
+**Source:** https://mux.com/docs/core/postman
 
 We recommend Postman as a way to easily explore and interact with our API.
 

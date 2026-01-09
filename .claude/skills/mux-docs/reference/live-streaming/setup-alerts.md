@@ -1,6 +1,6 @@
 # Set up alerts
 
-**Source:** https://docs.mux.com/_guides/developer/setup-alerts
+**Source:** https://mux.com/docs/developer/setup-alerts
 
 Rule: Criteria for when an alert should be triggered based on a metric, threshold, and filter criteria.
 

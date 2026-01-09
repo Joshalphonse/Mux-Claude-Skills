@@ -1,6 +1,6 @@
 # Mux Player for web releases
 
-**Source:** https://docs.mux.com/_guides/developer/player-releases-web
+**Source:** https://mux.com/docs/developer/player-releases-web
 
 Current release
 

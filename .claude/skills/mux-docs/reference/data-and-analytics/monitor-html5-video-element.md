@@ -1,6 +1,6 @@
 # Monitor HTML5 video element
 
-**Source:** https://docs.mux.com/_guides/developer/monitor-html5-video-element
+**Source:** https://mux.com/docs/developer/monitor-html5-video-element
 
 Include the Mux JavaScript SDK on every page of your web app that includes video. You can use the Mux-hosted version of the script or install via npm. mux-embed follows semantic versioning and the API will not change between major releases.
 

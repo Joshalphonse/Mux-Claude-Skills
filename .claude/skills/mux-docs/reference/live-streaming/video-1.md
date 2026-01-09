@@ -1,6 +1,6 @@
 # Understanding Mux Video Pricing
 
-**Source:** https://docs.mux.com/_guides/pricing/video
+**Source:** https://mux.com/docs/pricing/video
 
 Mux pricing is split up into three categories: input, storage, and delivery. In other words, you're charged by how much video you upload every month, how much video you store every month, and how much video your users stream every month.
 
