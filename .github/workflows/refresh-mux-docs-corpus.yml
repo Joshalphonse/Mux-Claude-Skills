@@ -1,0 +1,45 @@
+name: refresh-mux-docs-corpus
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays at 06:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.CI_PUSH_TOKEN }} # allows committing corpus updates
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Clone mux.com docs repo
+        run: git clone --depth 1 ${{ secrets.MUX_DOCS_REPO_URL }} ../mux.com
+
+      - name: Build corpus
+        run: |
+          MUX_DOCS_REPO_PATH=../mux.com \
+          npx tsx .claude/skills/mux-docs/scripts/build-docs-corpus.ts
+
+      - name: Commit changes
+        run: |
+          set -e
+          git add .claude/skills/mux-docs/data/mux-docs-corpus.json
+          git diff --cached --quiet && exit 0
+          git config user.name "mux-docs-bot"
+          git config user.email "devnull@mux.com"
+          git commit -m "chore: refresh mux docs corpus"
+
+      - name: Push
+        if: success()
+        run: git push

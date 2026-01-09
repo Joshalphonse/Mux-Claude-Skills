@@ -34,6 +34,11 @@ npx tsx .claude/skills/mux-ai-video/scripts/analyze-video.ts <asset-id> --all
 | `OPENAI_API_KEY` | One of these | OpenAI API key |
 | `ANTHROPIC_API_KEY` | One of these | Anthropic API key |
 | `GOOGLE_GENERATIVE_AI_API_KEY` | One of these | Google AI API key |
+| `S3_ENDPOINT` | One of these | S3 endpoint (for upload-enabled workflows) |
+| `S3_REGION` | One of these | S3 region (e.g., `auto`) |
+| `S3_BUCKET` | One of these | S3 bucket name |
+| `S3_ACCESS_KEY_ID` | One of these | S3 access key |
+| `S3_SECRET_ACCESS_KEY` | One of these | S3 secret key |
 
 Get your Mux credentials at [dashboard.mux.com/settings/access-tokens](https://dashboard.mux.com/settings/access-tokens).
 
@@ -41,3 +46,4 @@ Get your Mux credentials at [dashboard.mux.com/settings/access-tokens](https://d
 
 - [SKILL.md](.claude/skills/mux-ai-video/SKILL.md) — Skill overview
 - [WORKFLOWS.md](.claude/skills/mux-ai-video/WORKFLOWS.md) — Detailed workflow reference
+- [Mux Docs Skill](.claude/skills/mux-docs/SKILL.md) — Build a local corpus from the mux.com docs for grounded Q&A
