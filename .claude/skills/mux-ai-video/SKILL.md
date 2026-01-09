@@ -3,20 +3,21 @@ name: mux-ai-video
 description: |
   AI-powered video workflows using the @mux/ai SDK. Use when working with Mux video assets, generating video summaries, creating chapters, detecting burned-in captions, content moderation, translating captions, or generating embeddings from video content.
 
-  ⚠️ CRITICAL REQUIREMENT ⚠️
-  BEFORE running ANY analysis commands, you MUST display the EXACT banner text below (copy it character-for-character, including all Unicode box-drawing characters):
+  ⚠️ CRITICAL OUTPUT BEHAVIOR ⚠️
 
-  ```
-  ███╗   ███╗██╗   ██╗██╗  ██╗     █████╗ ██╗
-  ████╗ ████║██║   ██║╚██╗██╔╝    ██╔══██╗██║
-  ██╔████╔██║██║   ██║ ╚███╔╝     ███████║██║
-  ██║╚██╔╝██║██║   ██║ ██╔██╗     ██╔══██║██║
-  ██║ ╚═╝ ██║╚██████╔╝██╔╝╚██╗    ██║  ██║██║
-  ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝    ╚═╝  ╚═╝╚═╝
-       AI-Powered Video Analysis
-  ```
+  When running the analyze-video.ts script:
+  - The script outputs a COLORED MAGENTA ASCII banner and formatted results to the terminal
+  - DO NOT repeat the banner or results in your text response
+  - Let the bash command output speak for itself
+  - After running the command, ALWAYS remind the user: "Press ctrl+o to expand the output and see the full colored banner and analysis."
+  - Keep your response brief (1-2 sentences max)
 
-  DO NOT generate your own banner. DO NOT modify this banner. Copy it EXACTLY as shown above.
+  Example:
+  User: "Summarize video ABC123"
+  You: [Run bash command]
+  You: "Analysis complete! Press ctrl+o to expand the output and see the analysis."
+
+  DO NOT repeat the title, description, tags, or other results that are already in the bash output.
 ---
 
 # Mux AI Video Skill
@@ -37,12 +38,12 @@ import { getSummaryAndTags } from "@mux/ai/workflows";
 const result = await getSummaryAndTags("your-asset-id", {
   provider: "openai",
   tone: "professional",
-  includeTranscript: true
+  includeTranscript: true,
 });
 
-console.log(result.title);       // "Getting Started with TypeScript"
+console.log(result.title); // "Getting Started with TypeScript"
 console.log(result.description); // "A comprehensive guide to..."
-console.log(result.tags);        // ["typescript", "tutorial", "programming"]
+console.log(result.tags); // ["typescript", "tutorial", "programming"]
 ```
 
 ## Required Environment Variables
@@ -82,9 +83,9 @@ Generate SEO-friendly titles, descriptions, and tags:
 import { getSummaryAndTags } from "@mux/ai/workflows";
 
 const result = await getSummaryAndTags("asset-id", {
-  provider: "openai",       // or "anthropic", "google"
-  tone: "professional",     // or "neutral", "playful"
-  includeTranscript: true
+  provider: "openai", // or "anthropic", "google"
+  tone: "professional", // or "neutral", "playful"
+  includeTranscript: true,
 });
 
 // Returns: { title, description, tags, ... }
@@ -101,8 +102,8 @@ Detect inappropriate (sexual/violent) content:
 import { getModerationScores } from "@mux/ai/workflows";
 
 const result = await getModerationScores("asset-id", {
-  provider: "openai",  // or "hive"
-  thresholds: { sexual: 0.7, violence: 0.8 }
+  provider: "openai", // or "hive"
+  thresholds: { sexual: 0.7, violence: 0.8 },
 });
 
 if (result.exceedsThreshold) {
@@ -121,11 +122,11 @@ Detect hardcoded subtitles in videos:
 import { hasBurnedInCaptions } from "@mux/ai/workflows";
 
 const result = await hasBurnedInCaptions("asset-id", {
-  provider: "openai"  // or "anthropic", "google"
+  provider: "openai", // or "anthropic", "google"
 });
 
-console.log(result.hasBurnedInCaptions);  // true/false
-console.log(result.confidence);            // 0-1
+console.log(result.hasBurnedInCaptions); // true/false
+console.log(result.confidence); // 0-1
 ```
 
 **Providers**: OpenAI, Anthropic, Google
@@ -139,7 +140,7 @@ Create automatic chapter markers:
 import { generateChapters } from "@mux/ai/workflows";
 
 const result = await generateChapters("asset-id", "en", {
-  provider: "anthropic"
+  provider: "anthropic",
 });
 
 // Use with Mux Player
@@ -163,8 +164,8 @@ const result = await generateVideoEmbeddings("asset-id", {
   chunkingStrategy: {
     type: "token",
     maxTokens: 500,
-    overlap: 100
-  }
+    overlap: 100,
+  },
 });
 
 // Store in vector database
@@ -174,8 +175,8 @@ for (const chunk of result.chunks) {
     metadata: {
       assetId: result.assetId,
       startTime: chunk.metadata.startTime,
-      endTime: chunk.metadata.endTime
-    }
+      endTime: chunk.metadata.endTime,
+    },
   });
 }
 ```
@@ -192,7 +193,7 @@ import { translateCaptions } from "@mux/ai/workflows";
 
 const result = await translateCaptions("asset-id", "en", "es", {
   provider: "openai",
-  uploadToMux: true  // Requires S3 credentials
+  uploadToMux: true, // Requires S3 credentials
 });
 
 // Returns translated VTT and optionally uploads to Mux
@@ -209,7 +210,7 @@ Create AI-dubbed audio tracks:
 import { translateAudio } from "@mux/ai/workflows";
 
 const result = await translateAudio("asset-id", "es", {
-  uploadToMux: true
+  uploadToMux: true,
 });
 ```
 
@@ -221,10 +222,10 @@ const result = await translateAudio("asset-id", "es", {
 For custom workflows, use primitives:
 
 ```typescript
-import { 
+import {
   fetchTranscriptForAsset,
   getStoryboardUrl,
-  chunkVTTCues
+  chunkVTTCues,
 } from "@mux/ai/primitives";
 
 // Fetch transcript
@@ -234,21 +235,21 @@ const transcript = await fetchTranscriptForAsset("asset-id", "en");
 const storyboard = getStoryboardUrl("playback-id", { width: 640 });
 
 // Chunk transcript for processing
-const chunks = chunkVTTCues(transcript.cues, { 
-  maxTokens: 500, 
-  overlap: 100 
+const chunks = chunkVTTCues(transcript.cues, {
+  maxTokens: 500,
+  overlap: 100,
 });
 ```
 
 ## Provider Selection Guide
 
-| Use Case | Recommended Provider |
-|----------|---------------------|
-| Cost-effective summarization | OpenAI (gpt-4.1) |
-| High-quality chapters | Anthropic (claude-sonnet-4-5) |
-| Fast moderation | OpenAI omni-moderation |
-| Embeddings | OpenAI text-embedding-3-small |
-| Audio dubbing | ElevenLabs (only option) |
+| Use Case                     | Recommended Provider          |
+| ---------------------------- | ----------------------------- |
+| Cost-effective summarization | OpenAI (gpt-4.1)              |
+| High-quality chapters        | Anthropic (claude-sonnet-4-5) |
+| Fast moderation              | OpenAI omni-moderation        |
+| Embeddings                   | OpenAI text-embedding-3-small |
+| Audio dubbing                | ElevenLabs (only option)      |
 
 ## Important Notes
 
@@ -269,4 +270,3 @@ See [scripts/analyze-video.ts](scripts/analyze-video.ts) for a complete example.
 - [Workflows Guide](WORKFLOWS.md) - Detailed workflow documentation
 - [API Reference](https://github.com/muxinc/ai/blob/main/docs/API.md)
 - [Mux AI SDK GitHub](https://github.com/muxinc/ai)
-
