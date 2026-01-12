@@ -1,6 +1,6 @@
 # Make API requests
 
-**Source:** https://mux.com/docs/core/make-api-requests
+**Source:** https://mux.com/docs/_guides/core/make-api-requests
 
 | Term         | Description                                            |
 | :----------- | :----------------------------------------------------- |

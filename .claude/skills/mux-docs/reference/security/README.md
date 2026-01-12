@@ -1,6 +1,6 @@
 # README
 
-**Source:** https://docs.mux.com/README
+**Source:** https://mux.com/docs/README
 
 mux.com/docs
 

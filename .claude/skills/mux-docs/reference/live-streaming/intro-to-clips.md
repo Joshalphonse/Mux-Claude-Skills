@@ -1,6 +1,6 @@
 # Introduction to video clipping
 
-**Source:** https://mux.com/docs/developer/intro-to-clips
+**Source:** https://mux.com/docs/_guides/developer/intro-to-clips
 
 Clipping video with Mux
 

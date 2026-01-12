@@ -1,6 +1,6 @@
 # Mux Player for Android releases
 
-**Source:** https://mux.com/docs/developer/player-releases-android
+**Source:** https://mux.com/docs/_guides/developer/player-releases-android
 
 Current release
 

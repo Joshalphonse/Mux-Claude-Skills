@@ -1,6 +1,6 @@
 # Debug live stream issues
 
-**Source:** https://mux.com/docs/developer/debug-live-stream-issues
+**Source:** https://mux.com/docs/_guides/developer/debug-live-stream-issues
 
 The Live Stream Input Health dashboard is a real-time dashboard that provides visibility on how Mux receives your live stream from the encoder. When a sizable percentage of your viewers complain about their viewing experience or your configured Mux Data Alert fires, a good starting point for identifying the problem is understanding the live stream's health. The video below shows how to navigate to your Live Stream Input Health dashboard.
 

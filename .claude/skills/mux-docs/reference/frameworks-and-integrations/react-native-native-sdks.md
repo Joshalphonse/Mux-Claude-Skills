@@ -1,6 +1,6 @@
 # Bridging Native Mux SDKs
 
-**Source:** https://mux.com/docs/frameworks/react-native-native-sdks
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-native-sdks
 
 Bridging Native Mux SDKs
 

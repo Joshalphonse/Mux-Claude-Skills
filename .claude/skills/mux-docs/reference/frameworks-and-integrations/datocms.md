@@ -1,6 +1,6 @@
 # Integrate with DatoCMS
 
-**Source:** https://mux.com/docs/integrations/datocms
+**Source:** https://mux.com/docs/_guides/integrations/datocms
 
 Mux is by default enabled in every new DatoCMS project. The integration allows you to upload videos directly from DatoCMS dashboard or using the REST API. The CMS interface will then allow you to use the videos in the content, while on the API side you’ll be able to retrieve the Mux Video URLs and the thumbnail.
 

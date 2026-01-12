@@ -1,6 +1,6 @@
 # Troubleshooting & FAQ
 
-**Source:** https://mux.com/docs/frameworks/react-native-troubleshooting
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-troubleshooting
 
 Troubleshooting & FAQ
 
@@ -720,8 +720,8 @@ Getting Help
 
 Documentation Resources
 
-- Mux Video API Reference
-- Mux Data API Reference
+- Mux Video API reference
+- Mux Data API reference
 - react-native-video Documentation
 - Expo Video Documentation
 

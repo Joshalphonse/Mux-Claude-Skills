@@ -1,6 +1,6 @@
 # Add high-performance video to your Python application
 
-**Source:** https://mux.com/docs/integrations/mux-python-sdk
+**Source:** https://mux.com/docs/_guides/integrations/mux-python-sdk
 
 Installation
 

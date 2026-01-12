@@ -1,6 +1,6 @@
 # Use Video.js with Mux
 
-**Source:** https://mux.com/docs/developer/playback-videojs-with-mux
+**Source:** https://mux.com/docs/_guides/developer/playback-videojs-with-mux
 
 Video.js kit is a project built on Video.js with additional Mux specific functionality built in.
 This includes support for:

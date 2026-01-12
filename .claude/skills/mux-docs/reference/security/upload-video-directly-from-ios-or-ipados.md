@@ -1,6 +1,6 @@
 # Upload video directly from iOS or iPadOS
 
-**Source:** https://mux.com/docs/developer/upload-video-directly-from-ios-or-ipados
+**Source:** https://mux.com/docs/_guides/developer/upload-video-directly-from-ios-or-ipados
 
 Direct Uploads allow you to upload content from your client applications directly to Mux without needing any intermediary steps using an authenticated URL.
 

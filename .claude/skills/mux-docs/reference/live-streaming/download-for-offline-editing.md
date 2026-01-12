@@ -1,6 +1,6 @@
 # Download for offline editing
 
-**Source:** https://mux.com/docs/developer/download-for-offline-editing
+**Source:** https://mux.com/docs/_guides/developer/download-for-offline-editing
 
 Why download the master
 

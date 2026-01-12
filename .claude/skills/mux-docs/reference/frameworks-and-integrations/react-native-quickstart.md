@@ -1,6 +1,6 @@
 # Play video in React Native
 
-**Source:** https://mux.com/docs/frameworks/react-native-quickstart
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-quickstart
 
 Mux delivers video using HLS (HTTP Live Streaming), which is natively supported on both iOS and Android. To play Mux videos in React Native, you'll use expo-video, a cross-platform, performant video component with native support for React Native and Expo.
 

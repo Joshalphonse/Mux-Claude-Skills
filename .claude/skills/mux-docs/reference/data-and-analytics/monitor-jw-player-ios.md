@@ -1,6 +1,6 @@
 # Monitor JW Player (iOS)
 
-**Source:** https://mux.com/docs/developer/monitor-jw-player-ios
+**Source:** https://mux.com/docs/_guides/developer/monitor-jw-player-ios
 
 In order to integrate Mux Data tracking for your JW Player, you will need to be using JW Player 3.x or later. You will need to already have a JW Player license key and an iOS app with a working implementation of JWPlayer-SDK.
 

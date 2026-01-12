@@ -1,6 +1,6 @@
 # Manage stream keys
 
-**Source:** https://mux.com/docs/developer/manage-stream-keys
+**Source:** https://mux.com/docs/_guides/developer/manage-stream-keys
 
 When live streaming, a stream key is used by a broadcaster to receive a live stream for a Mux account. Stream keys, by nature, are private and should be handled with care. This means that access to the stream key should be reserved for the broadcaster and hidden from end users.
 

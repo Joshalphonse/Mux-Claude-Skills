@@ -1,6 +1,6 @@
 # Core functionality of Mux Player
 
-**Source:** https://mux.com/docs/developer/player-core-functionality
+**Source:** https://mux.com/docs/_guides/developer/player-core-functionality
 
 Mux Platform integration
 

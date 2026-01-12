@@ -1,6 +1,6 @@
 # Track autoplaying videos
 
-**Source:** https://mux.com/docs/developer/track-autoplaying-videos
+**Source:** https://mux.com/docs/_guides/developer/track-autoplaying-videos
 
 If you are autoplaying videos with any web based players that use the video element then make sure you read this guide so that Mux can accurately track your videos' startup time. This applies to video elements with the autoplay attribute and anytime you are calling play() on a video element (this includes all HTML5 players like VideoJS, JWPlayer, Shaka player, etc.).
 

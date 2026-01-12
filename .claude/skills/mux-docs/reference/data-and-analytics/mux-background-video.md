@@ -1,6 +1,6 @@
 # Mux Background Video
 
-**Source:** https://mux.com/docs/developer/mux-background-video
+**Source:** https://mux.com/docs/_guides/developer/mux-background-video
 
 Mux Background Video is a lightweight component and HLS engine for creating background videos using Mux HLS streams.
 

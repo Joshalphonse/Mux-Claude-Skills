@@ -1,6 +1,6 @@
 # Startup Time
 
-**Source:** https://mux.com/docs/developer/data-startup-time-metric
+**Source:** https://mux.com/docs/_guides/developer/data-startup-time-metric
 
 <Image
   alt="Startup Time Dashboard"

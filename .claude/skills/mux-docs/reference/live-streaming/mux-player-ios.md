@@ -1,6 +1,6 @@
 # Mux Player for iOS
 
-**Source:** https://mux.com/docs/developer/mux-player-ios
+**Source:** https://mux.com/docs/_guides/developer/mux-player-ios
 
 This guide will help you install the Mux Player SDK in your native iOS or iPadOS application. If you encounter any issues please let us know by filing an issue on Github.
 

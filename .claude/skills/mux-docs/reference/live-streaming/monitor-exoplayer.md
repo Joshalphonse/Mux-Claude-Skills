@@ -1,6 +1,6 @@
 # Monitor ExoPlayer
 
-**Source:** https://mux.com/docs/developer/monitor-exoplayer
+**Source:** https://mux.com/docs/_guides/developer/monitor-exoplayer
 
 This documents integration instructions for Google's ExoPlayer library, version 2.x. ExoPlayer versions before 2.0 are not supported. As of version 3.0.0 of Mux's integration with ExoPlayer, only versions of ExoPlayer greater than or equal to 2.10.x are supported.
 

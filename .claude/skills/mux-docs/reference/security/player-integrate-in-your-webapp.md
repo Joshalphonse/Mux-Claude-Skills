@@ -1,6 +1,6 @@
 # Integrate Mux Player into your web application
 
-**Source:** https://mux.com/docs/developer/player-integrate-in-your-webapp
+**Source:** https://mux.com/docs/_guides/developer/player-integrate-in-your-webapp
 
 Install Mux Player
 

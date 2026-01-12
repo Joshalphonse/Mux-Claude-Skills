@@ -1,6 +1,6 @@
 # Export Monitoring data for integration
 
-**Source:** https://mux.com/docs/developer/export-monitoring-data
+**Source:** https://mux.com/docs/_guides/developer/export-monitoring-data
 
 The Monitoring Samples Stream is only available on Mux Custom Media plans. Learn more about Mux Data Plans or contact support.
 

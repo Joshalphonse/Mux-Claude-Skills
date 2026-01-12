@@ -1,6 +1,6 @@
 # Monitor Kaltura Player (Android)
 
-**Source:** https://mux.com/docs/developer/monitor-kaltura-android
+**Source:** https://mux.com/docs/_guides/developer/monitor-kaltura-android
 
 This documents integration instructions for Kaltura PlayKit and TVPlayer for Android version v4.16.0 or higher.
 

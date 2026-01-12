@@ -1,6 +1,6 @@
 # Add high-performance video to your Laravel application
 
-**Source:** https://mux.com/docs/frameworks/laravel
+**Source:** https://mux.com/docs/_guides/frameworks/laravel
 
 Laravel is one of the most popular PHP frameworks for building a website but doesn't have a built-in path for integrating video.
 

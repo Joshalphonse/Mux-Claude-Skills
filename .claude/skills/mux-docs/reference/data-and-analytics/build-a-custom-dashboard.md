@@ -1,6 +1,6 @@
 # Build a custom dashboard
 
-**Source:** https://mux.com/docs/developer/build-a-custom-dashboard
+**Source:** https://mux.com/docs/_guides/developer/build-a-custom-dashboard
 
 What are Custom Dashboards?
 

@@ -1,6 +1,6 @@
 # Building Video Feeds
 
-**Source:** https://mux.com/docs/frameworks/react-native-video-feeds
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-video-feeds
 
 Building Video Feeds
 

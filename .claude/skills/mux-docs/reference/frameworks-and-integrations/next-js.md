@@ -1,6 +1,6 @@
 # Add high-performance video to your Next.js application
 
-**Source:** https://mux.com/docs/frameworks/next-js
+**Source:** https://mux.com/docs/_guides/frameworks/next-js
 
 Mux is available as a native integration through the Vercel Marketplace. Visit the Vercel documentation for specific guidance related to getting up and running with Mux on Vercel.
 

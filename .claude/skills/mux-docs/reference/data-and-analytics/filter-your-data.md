@@ -1,6 +1,6 @@
 # Filter your Data
 
-**Source:** https://mux.com/docs/developer/filter-your-data
+**Source:** https://mux.com/docs/_guides/developer/filter-your-data
 
 The filters[] parameter allows you to filter your data using flexible syntax that supports different types of operations depending on the dimension type.
 

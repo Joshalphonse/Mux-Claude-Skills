@@ -1,6 +1,6 @@
 # Monitor THEOplayer (iOS)
 
-**Source:** https://mux.com/docs/developer/monitor-theoplayer-ios
+**Source:** https://mux.com/docs/_guides/developer/monitor-theoplayer-ios
 
 Requirements:
 

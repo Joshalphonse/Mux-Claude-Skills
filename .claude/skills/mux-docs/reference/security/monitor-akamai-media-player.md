@@ -1,6 +1,6 @@
 # Monitor Akamai media player
 
-**Source:** https://mux.com/docs/developer/monitor-akamai-media-player
+**Source:** https://mux.com/docs/_guides/developer/monitor-akamai-media-player
 
 <CodeExamples
   examples={{

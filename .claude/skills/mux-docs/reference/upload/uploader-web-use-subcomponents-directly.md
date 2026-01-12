@@ -1,6 +1,6 @@
 # Compose custom UIs with subcomponents
 
-**Source:** https://mux.com/docs/developer/uploader-web-use-subcomponents-directly
+**Source:** https://mux.com/docs/_guides/developer/uploader-web-use-subcomponents-directly
 
 Although Mux Uploader is a single component that's easy to drop into your web application, it's actually built using several subcomponents
 "under the hood." If your application design or desired user experience requires more customization, you can use the individual web components that come packaged with Mux Uploader to build out a custom upload UI that meets your needs.

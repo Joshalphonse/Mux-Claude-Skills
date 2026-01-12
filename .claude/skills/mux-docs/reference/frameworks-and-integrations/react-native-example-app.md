@@ -1,6 +1,6 @@
 # Complete Example App
 
-**Source:** https://mux.com/docs/frameworks/react-native-example-app
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-example-app
 
 Complete Example App: Slop Social
 

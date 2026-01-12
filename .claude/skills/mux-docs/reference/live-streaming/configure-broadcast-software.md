@@ -1,6 +1,6 @@
 # Configure Broadcast Software
 
-**Source:** https://mux.com/docs/developer/configure-broadcast-software
+**Source:** https://mux.com/docs/_guides/developer/configure-broadcast-software
 
 Overview / configuration term glossary
 

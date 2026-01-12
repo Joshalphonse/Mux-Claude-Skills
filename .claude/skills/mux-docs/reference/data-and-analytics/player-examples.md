@@ -1,6 +1,6 @@
 # Mux Player examples
 
-**Source:** https://mux.com/docs/developer/player-examples
+**Source:** https://mux.com/docs/_guides/developer/player-examples
 
 <GuideCard
     imageSrc="/docs/images/example-player-loop@2x.png"

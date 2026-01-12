@@ -1,6 +1,6 @@
 # Show how many people are watching your videos
 
-**Source:** https://mux.com/docs/developer/see-how-many-people-are-watching
+**Source:** https://mux.com/docs/_guides/developer/see-how-many-people-are-watching
 
 In this guide you will learn how to use the Engagement Counts API in order to embed the latest view and unique viewer counts for a particular video ID into your applications.
 

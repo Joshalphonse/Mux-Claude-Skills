@@ -1,6 +1,6 @@
 # AI Moderation
 
-**Source:** https://mux.com/docs/examples/ai-moderation
+**Source:** https://mux.com/docs/_guides/examples/ai-moderation
 
 This guide uses @mux/ai, our open-source library that provides prebuilt workflows for common video AI tasks. It works with your favorite LLM provider (OpenAI, Anthropic, or Google). Check out the GitHub repository for more details!
 

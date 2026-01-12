@@ -1,6 +1,6 @@
 # Video playback in React Native
 
-**Source:** https://mux.com/docs/frameworks/react-native-video-playback
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-video-playback
 
 This guide covers everything you need to know to build a robust, production-ready video player in React Native using Mux and expo-video. If you haven't already, start with the quickstart guide to get basic playback working.
 

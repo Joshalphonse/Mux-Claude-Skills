@@ -1,6 +1,6 @@
 # Save and share filter sets
 
-**Source:** https://mux.com/docs/developer/save-and-share-filter-sets
+**Source:** https://mux.com/docs/_guides/developer/save-and-share-filter-sets
 
 What are filter sets?
 

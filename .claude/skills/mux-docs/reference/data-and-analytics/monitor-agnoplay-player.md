@@ -1,6 +1,6 @@
 # Monitor Agnoplay player service
 
-**Source:** https://mux.com/docs/developer/monitor-agnoplay-player
+**Source:** https://mux.com/docs/_guides/developer/monitor-agnoplay-player
 
 This integration is managed and operated by Agnoplay.
   Feedback should be made through your Agnoplay representative https://agnoplay.com or info@agnoplay.com.

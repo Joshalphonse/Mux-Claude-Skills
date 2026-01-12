@@ -1,6 +1,6 @@
 # Understand Monitoring Metrics and Dimensions
 
-**Source:** https://mux.com/docs/developer/monitoring-metrics
+**Source:** https://mux.com/docs/_guides/developer/monitoring-metrics
 
 Mux Data Monitoring offers near real-time metrics to measure Engagement metrics such as current concurrent viewers and QoE metrics to measure streaming performance. These metrics are available in the Monitoring Dashboard and API for Mux Data customers on a Media plan. Monitoring Metrics are offered at sub 20 second latency for a 24 hour period.
 

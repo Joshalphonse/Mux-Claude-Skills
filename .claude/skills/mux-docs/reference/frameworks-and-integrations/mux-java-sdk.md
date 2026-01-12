@@ -1,6 +1,6 @@
 # Add high-performance video to your Java application
 
-**Source:** https://mux.com/docs/integrations/mux-java-sdk
+**Source:** https://mux.com/docs/_guides/integrations/mux-java-sdk
 
 Installation
 

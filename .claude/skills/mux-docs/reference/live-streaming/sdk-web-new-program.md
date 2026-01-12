@@ -1,6 +1,6 @@
 # _guides/snippets/sdk-web-new-program
 
-**Source:** https://mux.com/docs/snippets/sdk-web-new-program
+**Source:** https://mux.com/docs/_guides/snippets/sdk-web-new-program
 
 In some cases, you may have the program change within a stream, and you may want to track each program as a view on its own. An example of this is a live stream that streams multiple programs back to back, with no interruptions.
 

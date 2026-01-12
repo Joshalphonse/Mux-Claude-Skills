@@ -1,6 +1,6 @@
 # Extend Data with custom metadata
 
-**Source:** https://mux.com/docs/developer/extend-data-with-custom-metadata
+**Source:** https://mux.com/docs/_guides/developer/extend-data-with-custom-metadata
 
 Limits
 

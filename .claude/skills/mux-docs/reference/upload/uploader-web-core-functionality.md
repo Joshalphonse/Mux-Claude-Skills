@@ -1,6 +1,6 @@
 # Core functionality of Mux Uploader
 
-**Source:** https://mux.com/docs/developer/uploader-web-core-functionality
+**Source:** https://mux.com/docs/_guides/developer/uploader-web-core-functionality
 
 Mux Video integration
 

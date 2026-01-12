@@ -1,6 +1,6 @@
 # Guide to writing guides
 
-**Source:** https://mux.com/docs/developer/example
+**Source:** https://mux.com/docs/_guides/developer/example
 
 Clone the repo muxinc/docs.mux.com. Follow instructions in the README to get the project runnig locally. After you have it running, you're ready to create a new guide.
 
@@ -420,7 +420,7 @@ We are a video company, are we not? If your video describes your whole guide, us
 
 It takes all the normal Mux Player React props, as well as caption and sm (as described above for ).
 
-Link to API References with
+Link to API references with
 If you have an inline-link to an API reference use  component like this link to assets.
 
 Reuse snippets with

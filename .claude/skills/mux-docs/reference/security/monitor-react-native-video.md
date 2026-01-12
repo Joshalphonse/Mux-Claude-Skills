@@ -1,6 +1,6 @@
 # Monitor React native video
 
-**Source:** https://mux.com/docs/developer/monitor-react-native-video
+**Source:** https://mux.com/docs/_guides/developer/monitor-react-native-video
 
 This SDK is currently beta.
 See the Known Issues and Caveats in the README on GitHub.

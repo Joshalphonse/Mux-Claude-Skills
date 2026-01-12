@@ -1,6 +1,6 @@
 # Autoplay your videos
 
-**Source:** https://mux.com/docs/developer/web-autoplay-your-videos
+**Source:** https://mux.com/docs/_guides/developer/web-autoplay-your-videos
 
 If you are autoplaying videos with any web based players that use the video element it will help to understand how browsers handle autoplay so that you can provide the best experience for your users. This applies to video elements with the autoplay attribute and anytime you are calling play() on a video element (this includes all HTML5 players like VideoJS, JWPlayer, Shaka player, etc.).
 

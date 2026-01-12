@@ -1,6 +1,6 @@
 # Monitor JW Player
 
-**Source:** https://mux.com/docs/developer/monitor-jw-player-web
+**Source:** https://mux.com/docs/_guides/developer/monitor-jw-player-web
 
 Include the Mux JavaScript SDK on every page of your web app that includes video.
 

@@ -1,6 +1,6 @@
 # _guides_todo/video/
 
-**Source:** https://docs.mux.com/_guides_todo/video/
+**Source:** https://mux.com/docs/_guides_todo/video/
 
 move this file to guides/video/index.mdx
 ---
@@ -83,7 +83,7 @@ Access Tokens also belong to an Environment. Be sure to use the same Environment
   "title": "2. POST a video"
 }
 [/block]
-(Detailed API Reference)
+(Detailed API reference)
 
 Videos stored in Mux are called assets. To create your first video asset, send a POST request to the /assets endpoint and set the "input" property to the URL of a video file that's accessible online.
 
@@ -125,7 +125,7 @@ The response will include an Asset ID and a Playback ID.
   "title": "3. Wait for \"ready\""
 }
 [/block]
-(Detailed API Reference)
+(Detailed API reference)
 
 As soon as you POST a video, Mux begins downloading and processing the video. For shorter files, this often takes just a few seconds. Very large files over poor connections may take a few minutes (or longer).
 

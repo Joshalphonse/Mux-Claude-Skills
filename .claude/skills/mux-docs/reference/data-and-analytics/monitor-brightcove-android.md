@@ -1,6 +1,6 @@
 # Brightcove (Android)
 
-**Source:** https://mux.com/docs/developer/monitor-brightcove-android
+**Source:** https://mux.com/docs/_guides/developer/monitor-brightcove-android
 
 Brightcove's native SDK for Android has support for both the native MediaPlayer as well as ExoPlayer. In the case that you utilize ExoPlayer (via a class such as BrightcoveExoPlayerVideoView), monitoring basic video playback is relatively simple.
 

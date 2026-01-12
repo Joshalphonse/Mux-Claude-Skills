@@ -1,6 +1,6 @@
 # Monitor LG
 
-**Source:** https://mux.com/docs/developer/monitor-lg
+**Source:** https://mux.com/docs/_guides/developer/monitor-lg
 
 LG Smart TV applications are built on top of the HTML5 video technology. To support video streaming, these applications can be integrated with player SDKs such as the HLS.js and Dash.js.
 

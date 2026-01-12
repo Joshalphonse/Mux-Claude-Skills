@@ -1,6 +1,6 @@
 # Handle async video processing
 
-**Source:** https://mux.com/docs/frameworks/react-native-async-processing
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-async-processing
 
 Video processing is asynchronous - whether you're uploading from a device or ingesting from a URL, there's always a delay while Mux processes the video. This guide shows you how to handle this gracefully in React Native.
 

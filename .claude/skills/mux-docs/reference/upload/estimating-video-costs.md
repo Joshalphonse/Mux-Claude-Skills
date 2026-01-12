@@ -1,6 +1,6 @@
 # Estimating your Mux Video costs
 
-**Source:** https://mux.com/docs/pricing/estimating-video-costs
+**Source:** https://mux.com/docs/_guides/pricing/estimating-video-costs
 
 If there’s one thing to take away from Mux’s video pricing model, it’s that minutes are everything. Minutes encoded, minutes stored, and minutes delivered are the only things that matter when it comes to billing. We’ve written previously about why we think this is a better way of charging for video.
 

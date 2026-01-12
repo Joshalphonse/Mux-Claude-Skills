@@ -1,6 +1,6 @@
 # Add your own live closed captions
 
-**Source:** https://mux.com/docs/developer/add-live-captions
+**Source:** https://mux.com/docs/_guides/developer/add-live-captions
 
 Why are closed captions important?
 

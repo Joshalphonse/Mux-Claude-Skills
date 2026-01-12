@@ -1,6 +1,6 @@
 # Use your own custom domain
 
-**Source:** https://mux.com/docs/developer/use-a-custom-domain-for-streaming
+**Source:** https://mux.com/docs/_guides/developer/use-a-custom-domain-for-streaming
 
 Use your own domain name for live ingest
 

@@ -1,6 +1,6 @@
 # Show live stream health stats to your streamer
 
-**Source:** https://mux.com/docs/developer/show-live-stream-health-stats
+**Source:** https://mux.com/docs/_guides/developer/show-live-stream-health-stats
 
 In this guide you will learn how to use the Live Stream Health Stats API in order to embed the live stream health stats for a particular live stream ID into your applications. A common use case is when you want to show the live stream stats to your streamer during a live event, so that the streamer can monitor the status and take actions when issues occur.
 

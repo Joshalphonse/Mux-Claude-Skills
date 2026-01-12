@@ -1,6 +1,6 @@
 # Live streaming from your app
 
-**Source:** https://mux.com/docs/developer/live-streaming-from-your-app
+**Source:** https://mux.com/docs/_guides/developer/live-streaming-from-your-app
 
 Live building blocks
 

@@ -1,6 +1,6 @@
 # Upload videos to Mux from React Native
 
-**Source:** https://mux.com/docs/frameworks/react-native-uploading-videos
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-uploading-videos
 
 There are two primary ways to get videos into Mux from a React Native application:
 

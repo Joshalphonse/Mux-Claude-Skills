@@ -1,6 +1,6 @@
 # Enable automatic CDN detection
 
-**Source:** https://mux.com/docs/developer/enable-automatic-cdn-detection
+**Source:** https://mux.com/docs/_guides/developer/enable-automatic-cdn-detection
 
 Mux has the capability to track each network request made by the player in order to expose network-level metrics such as throughput and latency measurements. In addition, Mux is able to auto-detect the CDN used to serve each manifest, segment, or fragment by inspecting certain response headers.  Enabling CDN auto-detection requires some minor configuration at each of your CDNs.
 

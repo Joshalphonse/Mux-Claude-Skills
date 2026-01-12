@@ -1,6 +1,6 @@
 # Optimizing your Mux Video costs
 
-**Source:** https://mux.com/docs/pricing/optimizing-video-costs
+**Source:** https://mux.com/docs/_guides/pricing/optimizing-video-costs
 
 You can find all of our costs on our pricing page, but you may be wondering how you can optimize your costs and potentially find ways to reduce your bill. We’re going to outline a few ways you can optimize your usage of Mux so that you can keep your costs as low as possible.
 

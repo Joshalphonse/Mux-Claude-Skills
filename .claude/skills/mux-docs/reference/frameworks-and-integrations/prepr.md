@@ -1,6 +1,6 @@
 # Integrate with Prepr
 
-**Source:** https://mux.com/docs/integrations/prepr
+**Source:** https://mux.com/docs/_guides/integrations/prepr
 
 Mux is enabled for every new Prepr account by default. You can upload your videos to Prepr, add them to a content model and query their URLs to display them on your website. Follow the steps below to get started.
 

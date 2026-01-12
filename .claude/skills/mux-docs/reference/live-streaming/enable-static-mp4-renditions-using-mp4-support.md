@@ -1,6 +1,6 @@
 # Enable static MP4 renditions using `mp4_support` (Deprecated)
 
-**Source:** https://mux.com/docs/developer/enable-static-mp4-renditions-using-mp4-support
+**Source:** https://mux.com/docs/_guides/developer/enable-static-mp4-renditions-using-mp4-support
 
 This guide describes using the mp4_support method of creating MP4s. This method is now deprecated though it continues to function. For more information on migrating to the new, more flexible static_renditions API, please refer to enabling static mp4 renditions
 

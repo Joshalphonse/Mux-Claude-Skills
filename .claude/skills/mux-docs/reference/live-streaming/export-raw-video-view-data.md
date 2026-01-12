@@ -1,6 +1,6 @@
 # Export raw video view data
 
-**Source:** https://mux.com/docs/developer/export-raw-video-view-data
+**Source:** https://mux.com/docs/_guides/developer/export-raw-video-view-data
 
 View data can be exported from Mux Data for aggregation and reporting in your data infrastructure. Views are available individually using the Views API or in bulk with the export methods: daily CSV exports or streaming exports.
 

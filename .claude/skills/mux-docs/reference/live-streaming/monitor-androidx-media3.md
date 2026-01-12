@@ -1,6 +1,6 @@
 # Monitor AndroidX Media3
 
-**Source:** https://mux.com/docs/developer/monitor-androidx-media3
+**Source:** https://mux.com/docs/_guides/developer/monitor-androidx-media3
 
 The Mux Data SDK for Media3 integrates Mux Data with Google's AndroidX Media3 SDK in order to integrate your video app with Mux Data. Our SDK consists of a set of open-source libraries capable of observing Media3 for events and data related to your customers' playback experience.
 

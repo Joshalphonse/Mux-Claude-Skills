@@ -1,6 +1,6 @@
 # Viewer Engagement
 
-**Source:** https://mux.com/docs/developer/data-engagement-metric
+**Source:** https://mux.com/docs/_guides/developer/data-engagement-metric
 
 <Image
   alt="Viewer Engagement Dashboard"

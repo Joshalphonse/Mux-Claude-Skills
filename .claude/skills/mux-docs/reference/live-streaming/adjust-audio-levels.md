@@ -1,6 +1,6 @@
 # Adjust audio levels
 
-**Source:** https://mux.com/docs/developer/adjust-audio-levels
+**Source:** https://mux.com/docs/_guides/developer/adjust-audio-levels
 
 What is audio normalization?
 

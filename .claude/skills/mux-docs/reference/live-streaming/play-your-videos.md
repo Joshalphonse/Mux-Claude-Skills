@@ -1,6 +1,6 @@
 # Play your videos
 
-**Source:** https://mux.com/docs/developer/play-your-videos
+**Source:** https://mux.com/docs/_guides/developer/play-your-videos
 
 Each asset and each live_stream in Mux can have one or more Playback IDs.
 

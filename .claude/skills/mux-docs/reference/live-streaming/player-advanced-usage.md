@@ -1,6 +1,6 @@
 # Advanced usage of Mux Player
 
-**Source:** https://mux.com/docs/developer/player-advanced-usage
+**Source:** https://mux.com/docs/_guides/developer/player-advanced-usage
 
 Listen for events
 

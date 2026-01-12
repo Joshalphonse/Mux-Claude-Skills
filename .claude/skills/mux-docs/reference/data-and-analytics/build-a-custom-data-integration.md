@@ -1,6 +1,6 @@
 # Build a Custom Integration
 
-**Source:** https://mux.com/docs/developer/build-a-custom-data-integration
+**Source:** https://mux.com/docs/_guides/developer/build-a-custom-data-integration
 
 Mux provides pre-built SDKs and integrations for most major platforms, but there are some platforms for which there is no pre-built integration. In this case, Mux provides core SDKs for multiple languages, including JavaScript, Java, and Objective-C. These core libraries encapsulate the majority of the business and metric calculation logic, while exposing a common API for plugging in individual player integrations.
 

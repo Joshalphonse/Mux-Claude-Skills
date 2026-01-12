@@ -1,6 +1,6 @@
 # Add high-performance video to your PHP application
 
-**Source:** https://mux.com/docs/integrations/mux-php-sdk
+**Source:** https://mux.com/docs/_guides/integrations/mux-php-sdk
 
 Installation
 

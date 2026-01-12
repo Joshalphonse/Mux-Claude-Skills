@@ -1,6 +1,6 @@
 # Add high-performance video to your Elixir application
 
-**Source:** https://mux.com/docs/integrations/mux-elixir-sdk
+**Source:** https://mux.com/docs/_guides/integrations/mux-elixir-sdk
 
 Installation
 

@@ -1,6 +1,6 @@
 # Integrate with Contentful
 
-**Source:** https://mux.com/docs/integrations/contentful
+**Source:** https://mux.com/docs/_guides/integrations/contentful
 
 This is a detailed guide for integrating the Contentful Mux app. To read more about the Mux app and why you may want to use it to power videos in your CMS, read the announcement blog post on Contentful's blog.
 

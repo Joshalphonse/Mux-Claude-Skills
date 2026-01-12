@@ -1,6 +1,6 @@
 # Add high-performance video to your Node application
 
-**Source:** https://mux.com/docs/integrations/mux-node-sdk
+**Source:** https://mux.com/docs/_guides/integrations/mux-node-sdk
 
 Installation
 

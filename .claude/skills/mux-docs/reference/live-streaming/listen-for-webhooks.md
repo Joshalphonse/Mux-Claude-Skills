@@ -1,6 +1,6 @@
 # Listen for webhooks
 
-**Source:** https://mux.com/docs/core/listen-for-webhooks
+**Source:** https://mux.com/docs/_guides/core/listen-for-webhooks
 
 Mux uses webhooks to let your application know when things happen asynchronously, outside of an API request cycle. For example, you may want to update something on your end when an asset transitions its status from processing to ready, or when a live stream starts or ends. When these asynchronous events happen, we'll make a POST request to the address you give us and you can do whatever you need with it on your end.
 

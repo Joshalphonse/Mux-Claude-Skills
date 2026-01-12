@@ -1,6 +1,6 @@
 # Customize the look and feel of Mux Player
 
-**Source:** https://mux.com/docs/developer/player-customize-look-and-feel
+**Source:** https://mux.com/docs/_guides/developer/player-customize-look-and-feel
 
 Mux Player is a fully-featured player out of the box that is made to look good and be fully functional and responsive for different screen sized. You can customize things on Mux Player like the colors and which controls are showing up.
 

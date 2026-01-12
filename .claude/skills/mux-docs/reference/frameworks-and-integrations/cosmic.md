@@ -1,6 +1,6 @@
 # Integrate with Cosmic
 
-**Source:** https://mux.com/docs/integrations/cosmic
+**Source:** https://mux.com/docs/_guides/integrations/cosmic
 
 1. Install the Mux Extension
 

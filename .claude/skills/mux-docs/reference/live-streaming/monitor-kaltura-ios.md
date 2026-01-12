@@ -1,6 +1,6 @@
 # Monitor Kaltura Player (iOS and tvOS)
 
-**Source:** https://mux.com/docs/developer/monitor-kaltura-ios
+**Source:** https://mux.com/docs/_guides/developer/monitor-kaltura-ios
 
 Mux Data Mux-Stats-Kaltura supports iOS 13.0 or newer and tvOS 13.0 or newer. The Mux integration with Kaltura is built on top of Mux's core Objective-C SDK, and the full code can be seen here: muxinc/mux-stats-sdk-kaltura-ios.
 

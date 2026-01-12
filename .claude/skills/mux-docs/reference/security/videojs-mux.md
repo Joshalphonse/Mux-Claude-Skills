@@ -1,6 +1,6 @@
 # _guides/snippets/changelogs/videojs-mux
 
-**Source:** https://mux.com/docs/snippets/changelogs/videojs-mux
+**Source:** https://mux.com/docs/_guides/snippets/changelogs/videojs-mux
 
 Current release
 

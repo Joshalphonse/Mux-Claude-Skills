@@ -1,6 +1,6 @@
 # Integrate with Strapi
 
-**Source:** https://mux.com/docs/integrations/strapi
+**Source:** https://mux.com/docs/_guides/integrations/strapi
 
 The Mux Video Uploader plugin allows editors to upload content directly to Mux from within the Strapi interface, then associate those videos with their custom collection types.
 

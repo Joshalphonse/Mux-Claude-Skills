@@ -1,6 +1,6 @@
 # _guides_todo/data/
 
-**Source:** https://docs.mux.com/_guides_todo/data/
+**Source:** https://mux.com/docs/_guides_todo/data/
 
 move this file to guides/data/index.mdx
 ---

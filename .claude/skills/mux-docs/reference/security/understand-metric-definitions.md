@@ -1,6 +1,6 @@
 # Understand metric definitions
 
-**Source:** https://mux.com/docs/developer/understand-metric-definitions
+**Source:** https://mux.com/docs/_guides/developer/understand-metric-definitions
 
 Engagement and Quality of Experience metrics are tracked during each playback attempt and a value for each metric is assigned to the view that is generated. Metrics reports aggregate the values from individual, completed views that match a specified filter to calculate the metric for analysis.
 

@@ -1,6 +1,6 @@
 # Reduce live stream latency
 
-**Source:** https://mux.com/docs/developer/reduce-live-stream-latency
+**Source:** https://mux.com/docs/_guides/developer/reduce-live-stream-latency
 
 Mux Video live streaming is built with RTMP ingest and HLS delivery. HLS inherently introduces latency.
 To the broadcasting industry, this latency is called glass-to-glass latency. Standard glass-to-glass latency with HLS
@@ -61,7 +61,7 @@ Typically, home networks in cities and mobile connections are not stable enough 
 
 Create a live stream with the "reduced" latency option
 
-Check out our Live Stream API Reference and find the latency_mode parameter and set the parameter to "reduced" in the request to create a live stream.
+Check out our Live Stream API reference and find the latency_mode parameter and set the parameter to "reduced" in the request to create a live stream.
 
 Set the latency mode on a live stream to reduced by making this POST request:
 

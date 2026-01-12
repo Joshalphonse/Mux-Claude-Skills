@@ -1,6 +1,6 @@
 # Add high-performance video to your Astro application
 
-**Source:** https://mux.com/docs/frameworks/astro
+**Source:** https://mux.com/docs/_guides/frameworks/astro
 
 When should you use Mux with Astro?
 When adding video to your Astro app, you'll encounter some common hurdles. First, videos are large. Storing them in your public directory can lead to excessive bandwidth consumption and poor Git repository performance. Next, it's important to compress and optimize your videos for the web. Then, as network conditions change, you might want to adapt the quality of your video to ensure a smooth playback experience for your users. Finally, you may want to integrate additional features like captions, thumbnails, and analytics.

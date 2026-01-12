@@ -1,6 +1,6 @@
 # Live Streaming FAQs
 
-**Source:** https://mux.com/docs/developer/live-streaming-faqs
+**Source:** https://mux.com/docs/_guides/developer/live-streaming-faqs
 
 What is Mux’s latency for live streams?
 For a standard live stream, latency is expected to be greater than 20 seconds and typically about 25 - 30 seconds. We offer a

@@ -1,6 +1,6 @@
 # Mux Player FAQs
 
-**Source:** https://mux.com/docs/developer/player-faqs
+**Source:** https://mux.com/docs/_guides/developer/player-faqs
 
 Do you support non-Mux HLS streams?
 

@@ -1,6 +1,6 @@
 # Content Security Policy for Mux
 
-**Source:** https://mux.com/docs/core/content-security-policy
+**Source:** https://mux.com/docs/_guides/core/content-security-policy
 
 Content Security Policy (CSP) is a security feature that helps protect your web application from cross-site scripting (XSS) attacks and other code injection attacks. CSP works by restricting the resources (such as scripts, stylesheets, images, and network connections) that a web page can load.
 

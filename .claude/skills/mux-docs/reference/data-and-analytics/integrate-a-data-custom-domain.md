@@ -1,6 +1,6 @@
 # Integrate a Data custom domain
 
-**Source:** https://mux.com/docs/developer/integrate-a-data-custom-domain
+**Source:** https://mux.com/docs/_guides/developer/integrate-a-data-custom-domain
 
 In this guide you will learn how to configure a custom domain used for submitting Mux Data beacons from SDK clients. Video view data will be sent to the specified custom domain rather than the default Mux domain.
 

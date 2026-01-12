@@ -1,6 +1,6 @@
 # Make your dimensions actionable with metadata
 
-**Source:** https://mux.com/docs/developer/make-your-data-actionable-with-metadata
+**Source:** https://mux.com/docs/_guides/developer/make-your-data-actionable-with-metadata
 
 One of Mux Data's core concepts are dimensions, which are the attributes of a video view that you can use to search, filter, and segment your video performance metrics.
 

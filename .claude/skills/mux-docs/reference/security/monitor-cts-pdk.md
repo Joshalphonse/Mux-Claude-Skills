@@ -1,6 +1,6 @@
 # Monitor CTS PDK
 
-**Source:** https://mux.com/docs/developer/monitor-cts-pdk
+**Source:** https://mux.com/docs/_guides/developer/monitor-cts-pdk
 
 If installing from the MPX Console, load ctx-mux from the CDN:
 

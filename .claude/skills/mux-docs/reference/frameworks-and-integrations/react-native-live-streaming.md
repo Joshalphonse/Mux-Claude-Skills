@@ -1,6 +1,6 @@
 # Live Streaming
 
-**Source:** https://mux.com/docs/frameworks/react-native-live-streaming
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-live-streaming
 
 Live Streaming
 
@@ -75,7 +75,7 @@ app.post('/api/live-stream/create', async (req, res) => {
 
 Keep stream keys secret! Only share them with the broadcaster. Anyone with the stream key can broadcast to your live stream.
 
-API Reference: Create Live Stream
+API reference: Create Live Stream
 
 ---
 

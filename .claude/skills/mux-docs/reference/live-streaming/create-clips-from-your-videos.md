@@ -1,6 +1,6 @@
 # Create clips from your videos
 
-**Source:** https://mux.com/docs/developer/create-clips-from-your-videos
+**Source:** https://mux.com/docs/_guides/developer/create-clips-from-your-videos
 
 To drive higher viewer engagement with the videos already on your service, you can create additional videos from your existing library or catalog. These videos could:
  Provide quick previews

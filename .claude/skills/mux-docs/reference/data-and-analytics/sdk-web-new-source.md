@@ -1,6 +1,6 @@
 # _guides/snippets/sdk-web-new-source
 
-**Source:** https://mux.com/docs/snippets/sdk-web-new-source
+**Source:** https://mux.com/docs/_guides/snippets/sdk-web-new-source
 
 If your application plays multiple videos back-to-back in the same video player, you need to signal when a new video starts to the Mux SDK. Examples of when this is needed are:
 

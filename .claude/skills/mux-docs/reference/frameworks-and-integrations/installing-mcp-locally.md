@@ -1,6 +1,6 @@
 # Install the local Mux MCP Server
 
-**Source:** https://mux.com/docs/integrations/installing-mcp-locally
+**Source:** https://mux.com/docs/_guides/integrations/installing-mcp-locally
 
 If you're interested in getting started quickly, and to read more about the MCP server, check out this guide. This guide walks you through building and installing the Mux MCP Server locally on your machine and connecting it to various AI clients.
 
@@ -238,5 +238,5 @@ If you run into issues or have questions:
 
 - Check the Model Context Protocol documentation for general MCP setup guidance
 - Review Claude's MCP documentation for Claude-specific configuration
-- Visit our API Reference for detailed endpoint documentation
+- Visit our API reference for detailed endpoint documentation
 - Contact support: mux.com/support

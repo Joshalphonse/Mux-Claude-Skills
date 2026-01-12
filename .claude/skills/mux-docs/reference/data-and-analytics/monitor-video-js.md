@@ -1,6 +1,6 @@
 # Monitor video.js
 
-**Source:** https://mux.com/docs/developer/monitor-video-js
+**Source:** https://mux.com/docs/_guides/developer/monitor-video-js
 
 Include the Mux JavaScript SDK on every page of your web app that includes video. You can use the Mux-hosted version of the script or install via npm. videojs-mux follows semantic versioning and the API will not change between major releases.
 

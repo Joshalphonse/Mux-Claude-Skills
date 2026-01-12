@@ -1,6 +1,6 @@
 # Limit which Environments a user has access to in the Dashboard
 
-**Source:** https://mux.com/docs/developer/dashboard-environment-restrictions
+**Source:** https://mux.com/docs/_guides/developer/dashboard-environment-restrictions
 
 This feature allows Admins to limit which Environments a given user can access within the Dashboard.
 

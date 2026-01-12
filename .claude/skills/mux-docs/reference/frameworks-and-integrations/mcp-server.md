@@ -1,6 +1,6 @@
 # Using the Mux MCP Server
 
-**Source:** https://mux.com/docs/integrations/mcp-server
+**Source:** https://mux.com/docs/_guides/integrations/mcp-server
 
 The Mux MCP (Model Context Protocol) Server brings Mux's Video and Data platform capabilities directly to your AI tools. Once set up, you can upload videos, manage live streams, analyze video performance, and access practically all of Mux's video infrastructure through natural language prompts in supported AI clients.
 
@@ -92,5 +92,5 @@ If you run into issues or have questions:
 
 - Check the Model Context Protocol documentation for general MCP setup guidance
 - Review Claude's MCP documentation for Claude-specific configuration
-- Visit our API Reference for detailed endpoint documentation
+- Visit our API reference for detailed endpoint documentation
 - Contact support: mux.com/support

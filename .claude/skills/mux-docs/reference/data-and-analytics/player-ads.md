@@ -1,6 +1,6 @@
 # Running ads with Mux Player
 
-**Source:** https://mux.com/docs/developer/player-ads
+**Source:** https://mux.com/docs/_guides/developer/player-ads
 
 Mux Player doesn’t have a built-in way to integrate ads. We will show you how this can be achieved though using client side ad insertion with the Google IMA SDK. This guide will demonstrate how you can enable preroll ads, but midroll and postroll ads could also be achieved using this approach.
 

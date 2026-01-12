@@ -1,10 +1,10 @@
-# API Reference for React Native
+# API reference for React Native
 
-**Source:** https://mux.com/docs/frameworks/react-native-api-reference
+**Source:** https://mux.com/docs/_guides/frameworks/react-native-api-reference
 
-API Reference for React Native
+API reference for React Native
 
-This guide covers the most common Mux API operations you'll use when building a React Native app. For complete API documentation, see the Video API Reference.
+This guide covers the most common Mux API operations you'll use when building a React Native app. For complete API documentation, see the Video API reference.
 
 Never call Mux APIs directly from React Native. All API calls must go through your backend server. Never expose Mux API credentials in client-side code.
 
@@ -74,7 +74,7 @@ const ingestAIVideo = async (videoUrl: string) => {
 ```
 
 
-API Reference: Create Asset
+API reference: Create Asset
 
 ---
 
@@ -135,7 +135,7 @@ const uploadVideo = async (videoUri: string) => {
 ```
 
 
-API Reference: Create Direct Upload
+API reference: Create Direct Upload
 
 ---
 
@@ -181,7 +181,7 @@ const getAssetStatus = async (assetId: string) => {
 ```
 
 
-API Reference: Get Asset
+API reference: Get Asset
 
 ---
 
@@ -226,7 +226,7 @@ const deleteVideo = async (assetId: string) => {
 ```
 
 
-API Reference: Delete Asset
+API reference: Delete Asset
 
 ---
 
@@ -290,7 +290,7 @@ const getPlaybackUrl = async (videoId: string) => {
 ```
 
 
-API Reference: Playback IDs | Secure Playback Guide
+API reference: Playback IDs | Secure Playback Guide
 
 ---
 
@@ -321,7 +321,7 @@ Parameters:
 - time - Time offset in seconds (default: 0)
 - fit_mode - How to fit image: smartcrop, preserve, crop
 
-API Reference: Thumbnail API Guide
+API reference: Thumbnail API Guide
 
 ---
 
@@ -382,7 +382,7 @@ function VideoCard({ video }: Props) {
 ```
 
 
-API Reference: Data API Reference
+API reference: Data API reference
 
 ---
 
@@ -436,7 +436,7 @@ const useLiveViewers = (playbackId: string) => {
 ```
 
 
-API Reference: Real-time Viewer Counts
+API reference: Real-time Viewer Counts
 
 ---
 
@@ -526,7 +526,7 @@ useEffect(() => {
 ```
 
 
-API Reference: Webhooks Guide
+API reference: Webhooks Guide
 
 Common webhook events:
 - video.asset.ready - Asset is ready for playback
@@ -670,14 +670,14 @@ async function muxApiCallWithRetry(apiCall, maxRetries = 3) {
 Next Steps
 
   <GuideCard
-    title="Video API Reference"
+    title="Video API reference"
     description="Complete API documentation for all Mux Video endpoints"
     links={[
       {title: "View API docs", href: "/docs/api-reference/video"},
     ]}
   />
   <GuideCard
-    title="Data API Reference"
+    title="Data API reference"
     description="Complete API documentation for Mux Data analytics"
     links={[
       {title: "View API docs", href: "/docs/api-reference/data"},

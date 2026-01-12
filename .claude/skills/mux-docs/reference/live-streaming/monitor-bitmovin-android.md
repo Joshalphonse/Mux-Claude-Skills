@@ -1,6 +1,6 @@
 # Monitor Bitmovin Player Android
 
-**Source:** https://mux.com/docs/developer/monitor-bitmovin-android
+**Source:** https://mux.com/docs/_guides/developer/monitor-bitmovin-android
 
 This documents integration instructions for Bitmovin's Bitmovin Player library, version 3.x and 2.x.
 

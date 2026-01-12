@@ -1,6 +1,6 @@
 # Mux Player for web
 
-**Source:** https://mux.com/docs/developer/mux-player-web
+**Source:** https://mux.com/docs/_guides/developer/mux-player-web
 
 Mux Player is a drop-in component that you can put in your web application to play Mux assets. Mux Player supports:
 

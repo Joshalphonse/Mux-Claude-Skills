@@ -1,6 +1,6 @@
 # Mux Data FAQs
 
-**Source:** https://mux.com/docs/developer/mux-data-faqs
+**Source:** https://mux.com/docs/_guides/developer/mux-data-faqs
 
 Why use Mux Data?
 Mux Data uncovers four key dimensions of video quality of service: playback failures, startup time, rebuffering, and video quality. If your aim is broadcast-quality video streaming, Mux Data enables you to monitor these critical video metrics.

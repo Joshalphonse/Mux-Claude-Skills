@@ -1,6 +1,6 @@
 # Upload video directly from an Android app
 
-**Source:** https://mux.com/docs/developer/upload-video-directly-from-android
+**Source:** https://mux.com/docs/_guides/developer/upload-video-directly-from-android
 
 Direct Uploads allow you to provide an authenticated upload URL to your client applications so content can be uploaded directly to Mux without needing any intermediate steps. You still get to control who gets an authenticated URL, how long it's viable, and, of course, the Asset settings used when the upload is complete.
 

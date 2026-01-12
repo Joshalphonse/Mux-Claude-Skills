@@ -1,6 +1,6 @@
 # Ensure privacy compliance with Mux Data
 
-**Source:** https://mux.com/docs/developer/ensure-data-privacy-compliance
+**Source:** https://mux.com/docs/_guides/developer/ensure-data-privacy-compliance
 
 Is Mux Data GDPR/CCPA/VPPA compliant and privacy preserving?
 
