@@ -52,6 +52,8 @@ Officially Supported Media3 Versions
 
 We try to support all production versions of media3. Currently, we support the following versions:
 
+ 1.9.x
+ 1.8.x
  1.6.x
  1.5.x
  1.4.x
@@ -252,6 +254,14 @@ If you are updating from our ExoPlayer SDK, you have to do a short migration. Th
 
 Current release
 
+v1.10.1
+Updates:
+ Add support for media3 v1.9.x
+Fixes:
+ fix: manifestNewestTime reported as the earliest PDT, not the latest
+
+Previous releases
+
 v1.10.0
 Updates:
  Add (incubating) playbackModeChange API methods to MuxStatsSdkMedia3.
@@ -261,8 +271,6 @@ Updates:
 Internal lib updates:
  Update stats.muxcore to 8.6.0
  Update stats.android to 1.5.0
-
-Previous releases
 
 v1.9.0
 Improvements:

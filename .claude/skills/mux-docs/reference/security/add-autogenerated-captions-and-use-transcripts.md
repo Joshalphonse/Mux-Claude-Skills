@@ -49,6 +49,7 @@ Mux supports the following languages and corresponding language codes for VOD ge
 | Portuguese | pt | Stable |
 | German | de | Stable |
 | French | fr | Stable |
+| Automatic Detection | auto | Stable |
 | Polish | pl | Beta |
 | Russian | ru | Beta |
 | Dutch | nl | Beta |

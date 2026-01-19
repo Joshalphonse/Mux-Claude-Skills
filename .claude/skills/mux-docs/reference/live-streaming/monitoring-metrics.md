@@ -2,21 +2,15 @@
 
 **Source:** https://mux.com/docs/_guides/developer/monitoring-metrics
 
-Mux Data Monitoring offers near real-time metrics to measure Engagement metrics such as current concurrent viewers and QoE metrics to measure streaming performance. These metrics are available in the Monitoring Dashboard and API for Mux Data customers on a Media plan. Monitoring Metrics are offered at sub 20 second latency for a 24 hour period.
+Mux Data Monitoring offers near real-time to measure streaming performance and current viewers. Mux Data Monitoring metrics are available to Mux Data customers on a Media plan. Monitoring Metrics are offered at sub 20 second latency and are available for 24 hours.
 
-Engagement Metrics
+Monitoring Metrics
 
 Current Concurrent Viewers (CCV)
 
 The number of viewers currently watching a video. This includes viewers currently waiting for the video to start playing, experiencing rebuffering, or who just experienced a playback failure. It does not include viewers that are paused or have been rebuffering more than five consecutive minutes.
 
-CCV by Geography
-A visualization of viewers currently watching a video on an interactive world map. Select a specific country to zoom into a regional breakdown.
-
-Top Titles by CCV
-The top video titles based on the number of viewers currently watching. The definition of Current Concurrent Viewers (CCV) is used to rank these video titles.
-
-Quality of Experience Metrics
+The Monitoring Dashboard includes CCV by geography and Top Titles by CCV. Additional breakdown dimensions are available via API.
 
 Video startup failures by startup attempts
 
@@ -26,7 +20,7 @@ Playback Failures by CCV
 
 The number of viewers who have just experienced a playback failure (a fatal error that prevents future playback) as a percent of Current Concurrent Viewers (CCV). Errors defined as non-fatal are not included in this metric.
 
-The Playback Failures by CCV metric is measured differently from the Playback Failure Percentage in the Mux QoE Metrics.
+The Playback Failures by CCV metric is measured differently from the Playback Failure Percentage in Mux QoE Metrics.
 
 Exits Before Video Start by Start Attempts
 
