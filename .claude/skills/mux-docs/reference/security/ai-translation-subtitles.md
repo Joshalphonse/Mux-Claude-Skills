@@ -94,9 +94,9 @@ Provider options
 
 @mux/ai supports three AI providers:
 
-- OpenAI (default): Uses gpt-5-mini model - Fast and cost-effective
+- OpenAI (default): Uses gpt-5.1 model - Fast and cost-effective
 - Anthropic: Uses claude-sonnet-4-5 model - Excellent for nuanced translations
-- Google: Uses gemini-2.5-flash model - Balance of speed and quality
+- Google: Uses gemini-3-flash-preview model - Balance of speed and quality
 
 
 ```javascript

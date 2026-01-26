@@ -352,12 +352,19 @@ Resources:
 
 Current release
 
+v4.11.0
+Improvements:
+ Observe and report changes in network connection type
+
+Fixes:
+ Use Foundation networking for request metrics to avoid missing values from AVMetrics
+
+Previous releases
+
 v4.10.0
 Updates:
  Add (incubating) playbackModeChange API
  Add cumulative ad playing time and total content time metric tracking. The metrics track the "wall-clock" time spent with video playing during a view, excluding buffering, seeking, and startup time.
-
-Previous releases
 
 v4.9.0
 Improvements:

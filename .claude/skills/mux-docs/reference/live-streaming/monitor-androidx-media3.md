@@ -254,13 +254,21 @@ If you are updating from our ExoPlayer SDK, you have to do a short migration. Th
 
 Current release
 
+v1.11.0
+New:
+ Detect changes to network connectivity during views and dispatch networkchange events
+
+Internal Lib Updates:
+ Update stats.muxcore to v8.8.0
+ Update muxstats:android to v1.7.0
+
+Previous releases
+
 v1.10.1
 Updates:
  Add support for media3 v1.9.x
 Fixes:
  fix: manifestNewestTime reported as the earliest PDT, not the latest
-
-Previous releases
 
 v1.10.0
 Updates:
@@ -480,4 +488,4 @@ Fixes:
 
 v0.8.0
 Improvements:
- feat: Detect Title, Source URL, and Poster Art
+* feat: Detect Title, Source URL, and Poster Art

@@ -26,11 +26,11 @@ repositories {
 ```
 
 
-Next, add a dependency on Mux Core (current version is 7.0.11):
+Next, add a dependency on Mux Core (current version is 8.8.0):
 
 
 ```
-api 'com.mux:stats.muxcore:7.0.11'
+api 'com.mux:stats.muxcore:8.8.0'
 ```
 
 
@@ -60,7 +60,7 @@ Next, add a dependency on Mux Core (current version is 7.0.11):
 <dependency>
     <groupId>com.mux</groupId>
     <artifactId>stats.muxcore</artifactId>
-    <version>7.0.11</version>
+    <version>8.8.0</version>
 </dependency>
 ```
 
@@ -403,6 +403,20 @@ muxStats.videoChange(customerVideoData);
 ```
 
 
+Reporting Netowrk Changes
+If your player is able to detect changes in network connectivity (for instance, switching from cellular to wifi), you can report these changes to Mux by calling the networkChange method on your instance of MuxStats. This method takes a single parameter, a string representing the new network connection type. Valid values are "wifi", "cellular", "wired", "other", and null.
+
+There's an overload of networkChange that also takes a boolean called isLowDataMode, which indicates whether the current network connection is in low data mode. This can be useful for mobile connections where the user has enabled a low data usage setting. This can be null if you don't know whether low data mode is enabled.
+
+
+```java
+// change to wifi
+muxStats.networkChange("wifi");
+// change to cellular with low data mode enabled
+muxStats.networkChange("cellular", true);
+```
+
+
 Sending Error events
 Your custom integration is able to dispatch error events associated with the current view. These errors can get alerted on and are also visually indicated on the event timeline shown for that view.
 
@@ -493,13 +507,17 @@ There is no destroy event for the core Java SDK. Instead, the release method is 
 
 Current release
 
+v8.8.0
+New:
+ Add MuxStats.networkChange() API for tracking network connectivity changes during a view
+
+Previous releases
+
 v8.7.0
 Updates:
  Allow error codes as String values
  Add overloads of MuxStats.error() which take code, message, error context and flags directly
  Add ErrorSeverity.WARNING and ErrorSeverity.FATAL. Deprecate ErrorSeverity.errorSeverityWarning and ErrorSeverity.erorrSeverityFatal
-
-Previous releases
 
 v8.6.0
 Updates:
@@ -635,7 +653,7 @@ Improvements:
 
 v7.7.2
 Improvements:
- Fix Ad metadata not being reported properly
+* Fix Ad metadata not being reported properly
 
 v7.7.0
 New:

@@ -45,7 +45,7 @@ Basic usage
 import { getSummaryAndTags } from "@mux/ai/workflows";
 
 const result = await getSummaryAndTags("your-mux-asset-id", {
-  tone: "professional" // or "normal" or "sassy"
+  tone: "professional" // or "neutral" or "playful"
 });
 
 console.log(result.title);
@@ -70,30 +70,30 @@ const professional = await getSummaryAndTags("your-mux-asset-id", {
   tone: "professional"
 });
 
-// Normal tone - balanced and conversational (default)
-const normal = await getSummaryAndTags("your-mux-asset-id", {
-  tone: "normal"
+// Neutral tone - balanced and conversational (default)
+const neutral = await getSummaryAndTags("your-mux-asset-id", {
+  tone: "neutral"
 });
 
-// Sassy tone - playful and engaging
-const sassy = await getSummaryAndTags("your-mux-asset-id", {
-  tone: "sassy"
+// Playful tone - playful and engaging
+const playful = await getSummaryAndTags("your-mux-asset-id", {
+  tone: "playful"
 });
 ```
 
 
 Here's some example titles for each tone, based on the same demo video of Mux's thumbnail API:
-- Normal: Effortless Thumbnails & GIFs with Mux API
-- Sassy: Developer Snags Thumbnails and GIFs with Mux API
+- Neutral: Effortless Thumbnails & GIFs with Mux API
+- Playful: Developer Snags Thumbnails and GIFs with Mux API
 - Professional: Mux API Simplifies Video Thumbnail and GIF Creation
 
 Provider options
 
 @mux/ai supports three AI providers:
 
-- OpenAI (default): Uses gpt-5-mini model - Fast and cost-effective
+- OpenAI (default): Uses gpt-5.1 model - Fast and cost-effective
 - Anthropic: Uses claude-sonnet-4-5 model - Great for nuanced understanding
-- Google: Uses gemini-2.5-flash model - Balance of speed and quality
+- Google: Uses gemini-3-flash-preview model - Balance of speed and quality
 
 
 ```javascript
@@ -179,7 +179,7 @@ Best practices
 - Choose appropriate tone: Match the tone to your brand voice
 - Validate critical metadata: Review auto-generated titles for high-visibility content
 - Cache results: Store generated metadata to avoid regenerating it
-- Consider cost vs. quality: gpt-5-mini is cost-effective for most use cases
+- Consider cost vs. quality: gpt-5.1 is cost-effective for most use cases
 
 Resources
 

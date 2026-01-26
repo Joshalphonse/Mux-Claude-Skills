@@ -233,6 +233,12 @@ Additional methods
 
 Most of the events are signaled as listed above. However, there are a few cases of events that require additional work.
 
+Reporting Network Conditions
+
+Versions 5.8.0 and later include MUXSDKNetworkChangeEvent. This allows you to report changes in network connection type and optionally if the connection is in low data mode. This event should be posted as soon as network information is available after viewinit (MUXSDKViewInitEvent) and whenever connection type or low data mode changes.
+
+A complete example implementation is available in the AVPlayer monitoring SDK's NetworkMonitor.swift.
+
 Changing the Video
 In order to change the video within a player, there are a few events that need to be fired in sequence. You can see the implementation of this within the muxinc/mux-stats-sdk-avplayer code. You should do the following:
 1. Dispatch a viewend event
@@ -363,13 +369,18 @@ Release notes
 
 Current release
 
+v5.8.0
+
+Improvements
+ Adds MUXSDKNetworkChangeEvent and predefined values for connection type via MUXSDKConnectionType
+
+Previous releases
+
 v5.7.1
 
 Fixes:
  Ensure playbackmodechange events are sent
  Restores tvOS-specific seeking detection behavior, where a best-effort attempt is made to count the preceding pause as part of the seek. This behavior was missing in 5.7.0, potentially causing changes in metrics.
-
-Previous releases
 
 v5.7.0
 
@@ -678,7 +689,7 @@ v2.2.1
 v2.2.0
 
  Add support for renditionchange events
- Add support for orientationchange events
+* Add support for orientationchange events
 
 v2.1.3
 
