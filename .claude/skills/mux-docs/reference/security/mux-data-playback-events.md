@@ -134,8 +134,9 @@ playbackmodechange (optional)
 Signals that the mode of playback has changed. You can use a defined preset or a custom value based on your playback offering.
 
 | Field | Type | Required | Description |
+|-------|------|----------|-------------|
 | playbackmode| string | Required | The name of the playback mode. Presets include standard, inline, fullscreen, pip, miniplayer, background. You can also pass a custom string.
-| playbackmodedata | string (json) | Optional | minified json | Optional string that is valid json that contains metadata which can be used for more detailed analysis. Non json strings will be ignored.
+| playbackmodedata | string (json) | Optional | Optional string that is valid json that contains metadata which can be used for more detailed analysis. Non json strings will be ignored.
 
 heartbeat
 Internal event that is used to provide periodic updates on the playback state, while the player is not paused. Each core library emits heartbeat events (hb) automatically, and custom integrations should not need to emit this.
