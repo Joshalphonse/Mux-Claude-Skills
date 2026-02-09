@@ -219,12 +219,17 @@ initOoyalaMux(player, {
 
 Current release
 
+v4.12.15
+
+- Add Playback Range Tracker for new engagement metrics
+  - Updated dependency: mux-embed to v5.16.0
+
+Previous releases
+
 v4.12.14
 
 - Automatically detect playback mode changes for HTML 5 Video
   - Updated dependency: mux-embed to v5.15.0
-
-Previous releases
 
 v4.12.13
 

@@ -106,12 +106,17 @@ Mux has been tested with CTS's VAST plugin for ad support. Configure the VAST pl
 
 Current release
 
+v3.13.15
+
+- Add Playback Range Tracker for new engagement metrics
+  - Updated dependency: mux-embed to v5.16.0
+
+Previous releases
+
 v3.13.14
 
 - Automatically detect playback mode changes for HTML 5 Video
   - Updated dependency: mux-embed to v5.15.0
-
-Previous releases
 
 v3.13.13
 

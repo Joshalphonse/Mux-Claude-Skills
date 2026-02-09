@@ -189,12 +189,17 @@ initBitmovinMux(player, {
 
 Current release
 
+v6.4.15
+
+- Add Playback Range Tracker for new engagement metrics
+  - Updated dependency: mux-embed to v5.16.0
+
+Previous releases
+
 v6.4.14
 
 - Automatically detect playback mode changes for HTML 5 Video
   - Updated dependency: mux-embed to v5.15.0
-
-Previous releases
 
 v6.4.13
 

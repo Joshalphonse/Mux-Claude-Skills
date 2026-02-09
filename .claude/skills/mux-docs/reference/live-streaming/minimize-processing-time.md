@@ -93,7 +93,7 @@ Mux Video also exposes this information in all subsequent asset webhooks, includ
 
 Understanding the transcoding progress of a non-standard input
 
-When an asset needs additional processing, you can use the progress field from the Get Asset API response, which returns the current state of and, the completion percentage of a transocode.
+When an asset needs additional processing, you can use the progress field from the Get Asset API response, which returns the current state of and, the completion percentage of a transcode.
 
 
 ```json

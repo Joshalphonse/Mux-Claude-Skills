@@ -24,11 +24,18 @@ Create a new Task XML named MuxTask.xml inside your components folder and give i
     <field id="error" type="assocarray" alwaysNotify="true"/>
     <field id="view" type="String" alwaysNotify="true"/>
     <field id="exit" type="Boolean" alwaysNotify="true"/>
-    <field id="exitType" type="String" alwaysNotify="true" value="hard" />
+    <field id="exitType" type="String" alwaysNotify="true" value="hard"/>
     <field id="useRenderStitchedStream" type="Boolean" alwaysNotify="true" value="false"/>
     <field id="useSSAI" type="Boolean" alwaysNotify="true" value="false"/>
     <field id="disableAutomaticErrorTracking" type="Boolean" alwaysNotify="true" value="false"/>
     <field id="randomMuxViewerId" type="Boolean" value="false"/>
+    <field id="cdn" type="String" alwaysNotify="true" />
+    <field id="disablePlayheadRebufferTracking" type="Boolean" alwaysNotify="true" value="false" />
+    <field id="disableDecoderStats" type="Boolean" alwaysNotify="true" value="false" />
+    <field id="rebufferstart" type="Boolean" alwaysNotify="true" />
+    <field id="rebufferend" type="Boolean" alwaysNotify="true" />
+    <field id="playback_mode" type="assocarray" alwaysNotify="true" />
+    <field id="request" type="assocarray" alwaysNotify="true" />
   </interface>
   <script type="text/brightscript" uri="pkg:/libs/mux-analytics.brs"/>
 </component>
@@ -62,6 +69,8 @@ Note that it may take a few minutes for views to show up in the Mux Data dashboa
 To help you with the integration process and ensure you have successfully incorporated the SDK within your player, we have provided a number of optional manifest attributes. These attributes can help you better understand how the MUX SDK event tracking works as well as show you the actual data being collected. Some of the benefits of using some of the debugging attributes (mentioned below) are that you will be able to see the SDK events and data collected as it occurs.
 
 NOTE: The outputs illustrated below are printed on a single line within the terminal to reduce clutter.
+
+  Note that the following settings are configured in your application's manifest file, rather than passed into the config object.
 
 mux_debug_events
 
@@ -195,6 +204,24 @@ end function
 ```
 
 
+If you would like to pass your own ad parameters, you can do so by setting ctx.mux to an associative array with the values you desire. Currently the only value supported is ad_type.
+
+
+```js
+function adTrackingCallback(obj = Invalid as Dynamic, eventType = Invalid as Dynamic, ctx = Invalid as Dynamic)
+  m.mux = GetGlobalAA().global.findNode("mux")
+  adUrl = Invalid
+  if obj <> Invalid
+    adUrl = obj.getAdUrl()
+  end if
+  # Add your ad_type if you desire
+  ctx.mux = {}
+  ctx.mux.ad_type = "preroll"
+  m.mux.setField("rafEvent", {obj: { adurl: adUrl }, eventType:eventType, ctx:ctx})
+end function
+```
+
+
 If you are utilizing RAF's renderStitchedStream method to stitch ads and content together client-side, then you must tell the Mux SDK that this is in use. This is set via useRenderStitchedStream on the Mux Task, set to true, such as:
 
 
@@ -212,6 +239,29 @@ If you are utilizing server-side ad insertion (SSAI), you should signal that to 
 mux.setField("useSSAI", true)
 ```
 
+
+There are a number of options you can configure on MuxTask, which can be used to customize the SDK:
+
+| Field Name | Type | Description |
+|:-|:-|:-|
+| video | Node | The Video node that is being tracked. |
+| config | assocarray | Configuration for the Mux task, including env key and additional metadata. |
+| rafEvent | assocarray | Used to forward RAF events from your application into the Mux SDK. See Advertising Configuration for more information. |
+| view | String | Used to control when views start and end directly. See Controlling View Start and End Directly for more information. |
+| disableAutomaticErrorTracking | Boolean | Used to signal errors manually. See Manually Tracking Errors for more information. |
+| error | assocarray | Used to signal errors manually. See Manually Tracking Errors for more information. |
+| exit | Boolean | Used to exit tracking directly. See Controlling View Start and End Directly for more information. |
+| exitType | String | Used to control the mechanism used while exiting tracking. See Controlling View Start and End Directly for more information. |
+| useRenderStitchedStream | Boolean | Used to set whether renderStitchedStream is used for advertising in your application. See Advertising Configuration for more information. |
+| useSSAI | Boolean | Used to set whether Roku's built-in server-side-ad-insertion is used for advertising in your application. See Advertising Configuration for more information. |
+| randomMuxViewerId | Boolean | Used to instruct Mux to use a random viewer ID instead of an ID based on the device. By default, Mux utilizes the device RIDA as the viewer ID. If this flag is enabled, unique viewer counts may be inflated.  |
+| cdn | String | Used to manually signal when the CDN changes. See CDN Tracking for more information. |
+| disablePlayheadRebufferTracking | Boolean | Used to control rebuffering directly. See Rebuffer Controls for more information. |
+| rebufferstart | Boolean | Used to control rebuffering directly. See Rebuffer Controls for more information. |
+| rebufferend | Boolean | Used to control rebuffering directly. See Rebuffer Controls for more information. |
+| disableDecoderStats | Boolean | By default, Mux sets enableDecoderStats to true on the Video node. Set this to true not enable decoder stats; dropped frames will no longer be tracked. |
+| playback_mode | assocarray | Used to set and update Playback Mode. |
+| request | assocarray | Used to trigger custom network request events. |
 
 Controlling View Start and End Directly
 
@@ -241,7 +291,7 @@ To change value to soft call m.mux.setField("exitType", "soft")
 
 NOTE: This means that there might be a time difference between you calling mux.exit=true and the task thread actually terminating. Please ensure you have a single MUX Task running at any given time.
 
-Disabling Automatic Error Tracking
+Manually Tracking Errors
 
 The Mux SDK for Roku tracks error events from the Video node automatically, and reports them as fatal playback errors. If you would like to disable this automatic error tracking, you can set the following in your MuxTask.xml:
 
@@ -392,10 +442,20 @@ If the request is completed (type is "completed"), the request_type is "api" or 
 
 Current release
 
-v2.4.1
-- fix: max function doesn't exist
+v2.5.1
+- fix an issue where request_url was not included in certain request events
+- expose mechanism to report ad_type within ads
 
 Previous releases
+
+v2.5.0
+- fix issue where subsequent views could end up with metadata from previous views
+- expose option for disabling tracking decoder stats
+- fix typo in player_error_message
+- remove warning when env_key is not set
+
+v2.4.1
+- fix: max function doesn't exist
 
 v2.4.0
 - add network request field

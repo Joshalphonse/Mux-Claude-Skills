@@ -4,11 +4,15 @@
 
 Current release
 
+v5.16.0
+
+- Add Playback Range Tracker for new engagement metrics
+
+Previous releases
+
 v5.15.0
 
 - Automatically detect playback mode changes for HTML 5 Video
-
-Previous releases
 
 v5.14.0
 

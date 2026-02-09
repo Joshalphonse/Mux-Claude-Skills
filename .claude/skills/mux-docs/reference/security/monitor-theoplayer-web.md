@@ -262,11 +262,16 @@ monitor.destroy();
 
 Current release
 
+v5.4.1
+
+- Add Playback Range Tracker for new engagement metrics
+  - Updated dependency: mux-embed to v5.16.0
+
+Previous releases
+
 v5.4.0
 
 - fix issue with sourcechange causing metadata conflicts
-
-Previous releases
 
 v5.3.15
 

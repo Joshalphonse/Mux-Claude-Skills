@@ -170,20 +170,49 @@ Max Video Resolution
 You can specify the maximum resolution to encode the uploaded video. This option is particularly important in managing costs when uploaded videos are higher than 1080p resolution and also allows you to encode and play videos in 2k or 4k resolutions.
 More information on the feature is available in our docs. Also, read more on this feature announcement in our blog post.
 
-Captions/Subtitles
+Captions and Subtitles
 
-With Mux's auto-generated captions, you can easily add captions to videos uploaded by selecting the language of the spoken words. When using this auto-generated option, Mux will generate captions automatically while it prepares the Asset. More details can be found in the Add auto-generated captions to your videos and use transcripts section of our documentation.
+You can add captions to your videos in two ways: during the initial upload or after the video has been uploaded. Both auto-generated and custom captions are supported, and you can use both types on the same asset.
 
-The "Auto-generated" captions configuration should only be used to generate a single language captions track. The language selected must match the spoken language.
+Adding captions during upload
+
+When uploading a new video, you can configure auto-generated captions in the upload modal before the file is uploaded to Mux. This allows you to set up auto-generated captions right from the start.
+
+Adding captions to existing videos
+
+For videos that have already been uploaded, you can add or manage captions in two ways:
+
+- From the Videos section: Go to Videos in your studio menu, find the video in the list, and open it to view its details and caption options.
+- From the document: Open the document that contains the video field, click the three-dots menu on the video input, then select Captions.
+
+Types of captions
+
+Auto-generated captions
+
+For auto-generated captions, select the language of the spoken audio in the video. Mux will generate the captions automatically while it prepares the asset. The display name you choose is what will appear in the player when users select the caption track.
+
+The auto-generated option should only be used to generate one caption track per asset. The language selected must match the spoken language in the video.
+
+More details: Add auto-generated captions and use transcripts.
+
+Custom captions
+
+You can add custom captions and subtitles by providing a public URL to a .vtt or .srt file. Enter the URL in the caption configuration and set the caption name and language. You can host the file in Sanity's Media Library or any other public URL.
+
+More details: Add subtitles/captions to videos.
+
+Managing captions
+
+Caption tracks can be added and removed at any time. Changes are reflected in the stored asset data. If you need to edit auto-generated captions, you can download the VTT file, make your edits, and re-upload it as a custom caption.
 
 Release notes
 
 Current release
 
-v2.10.0
+v2.14.0
 
-- Importing Mux videos will include the video title
-- Added the ability to backfill titles for existing Mux videos.
+- Add pagination in "Videos" library
+- Add text tracks management
 
 Previous releases
 

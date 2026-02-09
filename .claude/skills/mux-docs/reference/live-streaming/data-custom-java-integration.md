@@ -403,7 +403,7 @@ muxStats.videoChange(customerVideoData);
 ```
 
 
-Reporting Netowrk Changes
+Reporting Network Changes
 If your player is able to detect changes in network connectivity (for instance, switching from cellular to wifi), you can report these changes to Mux by calling the networkChange method on your instance of MuxStats. This method takes a single parameter, a string representing the new network connection type. Valid values are "wifi", "cellular", "wired", "other", and null.
 
 There's an overload of networkChange that also takes a boolean called isLowDataMode, which indicates whether the current network connection is in low data mode. This can be useful for mobile connections where the user has enabled a low data usage setting. This can be null if you don't know whether low data mode is enabled.
