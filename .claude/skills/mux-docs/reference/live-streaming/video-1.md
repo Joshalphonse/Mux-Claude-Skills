@@ -351,7 +351,7 @@ Is support included in my price?
 Our engineers provide hands-on support via email and chat for everyone. We also offer support packages with Slack and phone support. Reach out to us for more information about support packages.
 
 How does Mux Data fit in?
-As a Mux Video user, Mux Data Startup plan is included. When  you integrate Mux Data into your video player, you'll start getting engagement and QoE data for your videos.
+As a Mux Video customer, monitoring your views with Mux Data is included at no additional charge as long as the videos are hosted on Mux. You have access to all data features available on the Data Pay As You Go Plan. When you integrate Mux Data SDKs into your video player or use Mux Player, you'll start getting engagement and QoE data for your videos.
 
 Do you offer non-profit discounts?
 We offer one-time credits for non-profit customers to help them start using Mux. Get in touch to find out more.

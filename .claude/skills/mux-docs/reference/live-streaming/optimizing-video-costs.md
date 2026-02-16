@@ -177,6 +177,101 @@ If you're displaying multiple videos on page load for each viewer, this could en
 
 Limit the duration of your uploads
 
-If you're a looking to put a duration cap on your videos, you can set duration limits upon upload.
+If you're a looking to put a duration cap on your videos, you can set duration limits upon upload. This is not supported directly in Mux's API, but you can set this up on your end by checking the duration of the video before you upload it to Mux and reject any videos that are too long. This is a good way to limit your costs by not uploading videos that are unnecessarily long.
 
 This is done usually by UGC platforms (social media) given the short form content focus, but also by platforms looking to make sure they're not paying for unnecessary ingests costs.
+
+Below is a small proof of concept on how you might achieve this using React.
+
+
+```jsx
+import React, { useRef, useState } from 'react';
+import * as UpChunk from '@mux/upchunk';
+
+function VideoUpload() {
+  const pickerRef = useRef(null);
+  const [uploading, setUploading] = useState(false);
+
+  const getVideoDuration = (file) => {
+    return new Promise((resolve) => {
+      const video = document.createElement('video');
+      video.preload = 'metadata';
+
+      video.onloadedmetadata = () => {
+        window.URL.revokeObjectURL(video.src);
+        resolve(video.duration);
+      };
+
+      video.src = URL.createObjectURL(file);
+    });
+  };
+
+  const getUploadUrl = () =>
+    fetch('/the-backend-endpoint').then((res) => res.text());
+
+  const handleUpload = async () => {
+    const file = pickerRef.current?.files[0];
+
+    if (!file) {
+      alert('Please select a file');
+      return;
+    }
+
+    console.log(file);
+    const duration = await getVideoDuration(file);
+
+    if (duration > 300) {
+      // 5 minutes
+      console.log(duration);
+      alert('Video must be under 5 minutes');
+      pickerRef.current.value = '';
+      return;
+    }
+
+    setUploading(true);
+
+    const upchunkUpload = UpChunk.createUpload({
+      endpoint: getUploadUrl,
+      file: file,
+      chunkSize: 5120, // Uploads the file in ~5mb chunks
+    });
+
+    // subscribe to events
+    upchunkUpload.on('error', (err) => {
+      console.error('💥 🙀', err.detail);
+      setUploading(false);
+    });
+
+    upchunkUpload.on('success', () => {
+      console.log('Upload complete! 🎉');
+      setUploading(false);
+      pickerRef.current.value = '';
+    });
+
+    upchunkUpload.on('progress', (progress) => {
+      console.log(`Upload progress: ${progress.detail}%`);
+    });
+  };
+
+  return (
+    <div>
+      <input
+        ref={pickerRef}
+        id="picker"
+        type="file"
+        accept="video/*, audio/*"
+        disabled={uploading}
+      />
+      <button
+        id="send"
+        onClick={handleUpload}
+        disabled={uploading}
+      >
+        {uploading ? 'Uploading...' : 'Upload'}
+      </button>
+    </div>
+  );
+}
+
+export default VideoUpload;
+```

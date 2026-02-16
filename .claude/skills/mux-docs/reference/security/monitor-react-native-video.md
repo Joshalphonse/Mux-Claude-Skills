@@ -127,12 +127,27 @@ Customize beacon collection domain
 
 Current release
 
+v0.19.10
+
+- fix issue where playing time might accumulate for paused players
+  - Updated dependency: mux-embed to v5.17.1
+
+Previous releases
+
+v0.19.9
+
+- add compatibility for dash.js 5
+  - Updated dependency: mux-embed to v5.17.0
+
+v0.19.8
+
+- Update parsing of initial value for player_playback_mode
+  - Updated dependency: mux-embed to v5.16.1
+
 v0.19.7
 
 - Add Playback Range Tracker for new engagement metrics
   - Updated dependency: mux-embed to v5.16.0
-
-Previous releases
 
 v0.19.6
 

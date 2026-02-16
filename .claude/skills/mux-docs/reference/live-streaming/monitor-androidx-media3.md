@@ -254,6 +254,20 @@ If you are updating from our ExoPlayer SDK, you have to do a short migration. Th
 
 Current release
 
+v1.11.1
+New:
+ Track which sections of content a user has watched
+ Track mid-view changes to network type and send networkchange events
+
+Improvements:
+ Send "no_connection" as a network connection type if connectivity is momentarily lost during a stream
+
+Internal Lib Updates:
+ Update muxstats:android to 1.7.2
+ Update stats.muxcore to 8.9.0
+
+Previous releases
+
 v1.11.0
 New:
  Detect changes to network connectivity during views and dispatch networkchange events
@@ -261,8 +275,6 @@ New:
 Internal Lib Updates:
  Update stats.muxcore to v8.8.0
  Update muxstats:android to v1.7.0
-
-Previous releases
 
 v1.10.1
 Updates:
@@ -488,4 +500,4 @@ Fixes:
 
 v0.8.0
 Improvements:
-* feat: Detect Title, Source URL, and Poster Art
+ feat: Detect Title, Source URL, and Poster Art

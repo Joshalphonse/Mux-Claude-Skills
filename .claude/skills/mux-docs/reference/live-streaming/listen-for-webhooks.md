@@ -116,10 +116,11 @@ Asset Events
 | video.asset.updated | Asset has been updated. Use this to make sure your server is notified about changes to assets. |
 | video.asset.deleted | Asset has been deleted. Use this so that your server knows when an asset has been deleted, at which point it will no longer be playable. |
 | video.asset.live_stream_completed | The live stream for this asset has completed. Every time a live stream starts and ends a new asset gets created and this event fires. |
-| video.asset.static_renditions.ready | Static renditions for this asset are ready. Static renditions are streamable mp4 files that are most commonly used for allowing users to download files for offline viewing. |
-| video.asset.static_renditions.preparing | Static renditions for this asset are being prepared. After requesting static renditions you will get this webhook when they are being prepared. |
-| video.asset.static_renditions.deleted | Static renditions for this asset have been deleted. The static renditions (mp4 files) for this asset will no longer be available. |
-| video.asset.static_renditions.errored | Preparing static renditions for this asset has encountered an error. This indicates that there was some error when creating static renditions (mp4s) of your asset. This should be rare and if you see it unexpectedly please open a support ticket. |
+| video.asset.static_rendition.created | A new static rendition for this asset has been created. Static renditions are streamable mp4 files that are most commonly used for allowing users to download files for offline viewing. |
+| video.asset.static_rendition.ready | A static rendition for this asset is ready. Static renditions are streamable mp4 files that are most commonly used for allowing users to download files for offline viewing. |
+| video.asset.static_rendition.skipped | A static rendition for this asset was skipped, due to the source not being suitable for the requested static rendition. Static renditions are streamable mp4 files that are most commonly used for allowing users to download files for offline viewing. |
+| video.asset.static_rendition.deleted | A static rendition for this asset was deleted. The static renditions (mp4 files) for this asset will no longer be available. |
+| video.asset.static_rendition.errored | A static rendition for this asset errored. This indicates that there was some error when creating a static rendition (mp4s) of your asset. This should be rare and if you see it unexpectedly please open a support ticket. |
 | video.asset.master.ready | Master access for this asset is ready. Master access is used when downloading an asset for purposes of editing or post-production work. The master access file is not intended to be streamed or downloaded by end-users. |
 | video.asset.master.preparing | Master access for this asset is being prepared. After requesting master access you will get this webhook while it is being prepared. |
 | video.asset.master.deleted | Master access for this asset has been deleted. Master access for this asset has been removed. You will no longer be able to download the master file. If you want it again you should re-request it. |

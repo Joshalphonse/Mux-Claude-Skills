@@ -404,7 +404,7 @@ muxStats.videoChange(customerVideoData);
 
 
 Reporting Network Changes
-If your player is able to detect changes in network connectivity (for instance, switching from cellular to wifi), you can report these changes to Mux by calling the networkChange method on your instance of MuxStats. This method takes a single parameter, a string representing the new network connection type. Valid values are "wifi", "cellular", "wired", "other", and null.
+If your player is able to detect changes in network connectivity (for instance, switching from cellular to wifi), you can report these changes to Mux by calling the networkChange method on your instance of MuxStats. This method takes a single parameter, a string representing the new network connection type. Valid values are "wifi", "cellular", "wired", "other", and "no_connection".
 
 There's an overload of networkChange that also takes a boolean called isLowDataMode, which indicates whether the current network connection is in low data mode. This can be useful for mobile connections where the user has enabled a low data usage setting. This can be null if you don't know whether low data mode is enabled.
 
@@ -507,11 +507,27 @@ There is no destroy event for the core Java SDK. Instead, the release method is 
 
 Current release
 
+v8.9.0
+New:
+ Track ranges of content played during a view via video_playback_range metric
+
+Improvements:
+ NetworkChangeEvent no longer accepts null values. If the network disconnects, use no_connection
+ null values from IDevice.getNetworkConnectionType are now coerced to "no_connection"
+
+Previous releases
+
+v8.8.2
+Fixes:
+ count cumulative playing time after seeked events
+
+v8.8.1
+Fixes:
+ start cumulative time tracking on rebufferend if player wasn't paused
+
 v8.8.0
 New:
  Add MuxStats.networkChange() API for tracking network connectivity changes during a view
-
-Previous releases
 
 v8.7.0
 Updates:
@@ -653,7 +669,7 @@ Improvements:
 
 v7.7.2
 Improvements:
-* Fix Ad metadata not being reported properly
+ Fix Ad metadata not being reported properly
 
 v7.7.0
 New:

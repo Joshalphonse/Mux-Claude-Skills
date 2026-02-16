@@ -4,11 +4,23 @@
 
 Current release
 
+v5.17.1
+
+- fix issue where playing time might accumulate for paused players
+
+Previous releases
+
+v5.17.0
+
+- add compatibility for dash.js 5
+
+v5.16.1
+
+- Update parsing of initial value for player_playback_mode
+
 v5.16.0
 
 - Add Playback Range Tracker for new engagement metrics
-
-Previous releases
 
 v5.15.0
 

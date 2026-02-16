@@ -104,12 +104,27 @@ monitorTizenPlayer(player, {
 
 Current release
 
+v2.15.18
+
+- fix issue where playing time might accumulate for paused players
+  - Updated dependency: mux-embed to v5.17.1
+
+Previous releases
+
+v2.15.17
+
+- add compatibility for dash.js 5
+  - Updated dependency: mux-embed to v5.17.0
+
+v2.15.16
+
+- Update parsing of initial value for player_playback_mode
+  - Updated dependency: mux-embed to v5.16.1
+
 v2.15.15
 
 - Add Playback Range Tracker for new engagement metrics
   - Updated dependency: mux-embed to v5.16.0
-
-Previous releases
 
 v2.15.14
 
