@@ -209,6 +209,47 @@ Note that in the Contentful UI when an asset is using a signed URL you will see 
 
 Public and signed playback IDs can be toggled per-entry under the Data tab. Each time the IDs are toggled, the old playback ID is deleted, and a new ID is created in its place.
 
+Advanced: DRM
+
+DRM (Digital Rights Management) provides the highest level of content protection using industry-standard encryption. To use DRM, you must first request access. Once approved, you'll receive a DRM Configuration ID.
+
+Learn more about DRM.
+
+Enabling DRM in Contentful
+
+To enable DRM support, go to the Contentful Mux app configuration screen. You will see a new "Advanced: DRM" section where you can:
+
+1. Enable or disable DRM support by checking the Enable DRM checkbox
+2. Enter your DRM Configuration ID provided by Mux after your DRM access is approved
+
+This configuration is stored alongside your other installation parameters and applies to all videos uploaded through this Contentful space.
+
+Uploading DRM-protected videos
+
+Once DRM is enabled and configured, a new "DRM Protected" option will appear in the Privacy Settings section when uploading or editing a video asset.
+
+- The DRM option is only available when both DRM is enabled and a valid DRM Configuration ID is present
+- If DRM is enabled but no Configuration ID is set, the option will appear disabled with contextual help text
+- When DRM is enabled and configured, DRM Protected is selected by default (users can change it to Public or Protected if needed)
+
+Note: DRM is only available for video assets. If you attempt to upload an audio-only file with DRM selected, the app will display a warning indicating that DRM is not supported for audio files. Use the Protected option for secure playback of audio content.
+
+Viewing DRM-protected videos
+
+To view DRM-protected videos in Contentful, you must also have Signed URLs enabled in the app configuration. If Signed URLs are not enabled, you will see an error message when trying to view DRM content. See Advanced: Signed URLs for setup instructions.
+
+Due to browser iframe security restrictions, DRM-protected videos cannot be played directly within the Contentful preview. When viewing a DRM-protected asset, you will see a notice explaining this limitation.
+
+The app provides an "Open in external player" link that opens the video in a standalone browser tab where DRM playback is permitted. This external player uses a Blob URL to load the player with the required DRM tokens.
+
+Note: DRM playback incurs additional costs. See the DRM pricing section for details.
+
+Using DRM-protected videos in your application
+
+When you query a DRM-protected video through the Contentful API, the JSON object will include DRM-related information. The generated player code in the Player Code tab will automatically include the necessary DRM tokens (playback, thumbnail, storyboard, and drm tokens), so you can copy and paste it directly into your application.
+
+For more detailed information about implementing DRM playback, including token generation and player configuration, see the DRM guide.
+
 Note about version 2.0 release
 
 During the month of August 2025, version 2.0 of the plugin was released. No action is required as the plugin updates automatically.

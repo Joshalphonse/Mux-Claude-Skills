@@ -4,13 +4,20 @@
 
 Current release
 
+v1.5.0
+New:
+- Added MuxPlayerContext as a way to use an AVPlayer with Mux monitoring without needing to call stopMonitoring or do other teardown. Also supports AVQueuePlayer and has some basic Audio Session handling
+
+Fixes:
+- Fix several swift docs inaccuracies
+
+Previous releases
+
 v1.4.0
 
 Improvements
 - Resolves an issue where DRM playback would fail to start after a media services reset. It is still required to recreate the player and assets after such an event.
 - Improvements to the DRM registration process for more consistent startup latency
-
-Previous releases
 
 v1.3.0
 

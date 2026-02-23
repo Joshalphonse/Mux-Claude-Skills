@@ -34,7 +34,7 @@ Signed URLs, JWT signing, DRM protection, playback restrictions, authentication
 ### Upload & Ingestion
 Direct uploads, file ingestion, upload workflows, client-side uploaders
 
-**Location:** `reference/upload/` (11 files)
+**Location:** `reference/upload/` (12 files)
 
 ### Data & Analytics
 QoS metrics, viewer analytics, custom dashboards, monitoring, alerts, webhooks
@@ -44,7 +44,7 @@ QoS metrics, viewer analytics, custom dashboards, monitoring, alerts, webhooks
 ### Frameworks & Integrations
 React, Next.js, Vue, Laravel, CMS integrations, platform-specific SDKs
 
-**Location:** `reference/frameworks-and-integrations/` (36 files)
+**Location:** `reference/frameworks-and-integrations/` (37 files)
 
 ### Miscellaneous
 Other documentation and guides
