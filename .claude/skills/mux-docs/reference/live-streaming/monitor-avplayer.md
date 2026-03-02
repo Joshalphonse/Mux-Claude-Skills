@@ -53,38 +53,13 @@ This will install Mux-Stats-AVPlayer and the latest current release of our core 
 
 Next, add correct import statement into your application.
 
-Installing static library SDK package
+The example below uses monitorAVPlayerViewController(_:withPlayerName:customerData:). If you are using AVPlayerLayer, use monitorAVPlayerLayer(_:withPlayerName:customerData:) instead.
 
-To install the SDK using a static library package:
-
-1. Download the static SDK package MUXSDKStats-static.xcframework.zip attached to the version you'd like to install from the releases here.
-2. Download MuxCore-static.xcframework.zip whose version matches the package from step 1 from the releases here. Use the chart below to find the matching version.
-3. Unzip both MUXSDKStats-static.xcframework.zip and MuxCore-static.xcframework.zip, then drag and drop both MUXSDKStats.xcframework and MuxCore.xcframework to your Xcode project.
-4. Add MUXSDKStats and MuxCore to the application or framework target that will depend on them.
-5. Make sure that both MUXSDKStats and MuxCore are listed in your targets Frameworks, Libraries, and Embedded Content section in the General panel. Both need to include Embed & Sign under the Embed column.
-6. In that same targets Build Phases panel make sure both MUXSDKStats and MuxCore are present and include Required under the Status column.
-
-Package versions
-
-| MUXSDKStats  | MuxCore |
-| ------------ | ------- |
-| v4.3.0       | v5.2.0  |
-| v4.2.0       | v5.1.2  |
-| v4.1.2       | v5.1.2  |
-| v4.1.1       | v5.1.1  |
-| v4.1.0       | v5.1.0  |
-| v4.0.0       | v5.0.1  |
-| v3.6.2       | v4.7.1  |
-| v3.6.1       | v4.7.1  |
-| v3.6.0       | v4.7.0  |
-
-The example below uses monitorAVPlayerViewController. If you are using AVPlayerLayer, use monitorAVPlayerLayer instead.
-
-The playerName parameter is a string that identifies this instance of your player. When calling destroyPlayer or videoChangeForPlayer later on, you will need this string. Each instance of a player that runs simultaneously in your application should have a different playerName.
+The playerName parameter is a string that identifies this instance of your player. When calling destroyPlayer(_:) or videoChange(forPlayer:with:) later on, you will need this string. Each instance of a player that runs simultaneously in your application should have a different playerName.
 
 If you are using SwiftUI, attach the monitor in the onAppear action for your view. This ensures that the Mux Data SDK is able to get the dimensions of the view which is used to calculate video quality metrics.
 
-For more complete examples check the 3 demo apps in the repo. There is one demo app for iOS objective-c, one for iOS swift and another one for tvOS.
+For more complete examples check the demo app in the repo.
 
 After you've integrated, start playing a video in your player. A few minutes after you stop watching, you'll see the results in your Mux data dashboard. Login to the dashboard and find the environment that corresponds to your env_key and look for video views.
 
@@ -92,14 +67,11 @@ The only required field is env_key. But without some more metadata the metrics i
 
 Metadata fields are provided via the MUXSDKCustomerPlayerData and MUXSDKCustomerVideoData objects.
 
-For the full list of properties view the header files for this interfaces:
-
-- MUXSDKCustomerPlayerData.h
-- MUXSDKCustomerVideoData.h
+For the full list of properties, see the MuxCore headers in the latest stats-sdk-objc release.
 
 For more details about each property, view the Make your data actionable guide.
 
-There are some cases where you may not have the full set of metadata until after the video playback has started. In this case, you should omit the values when you first call monitorAVPlayer. Then, once you have the metadata, you can update the metadata with either the setCustomerPlayerData or updateCustomerDataForPlayer methods.
+There are some cases where you may not have the full set of metadata until after the video playback has started. In this case, you should omit the values when you first call monitorAVPlayerLayer, monitorAVPlayerViewController, or monitorAVPlayer. Then, once you have the metadata, update it by calling setCustomerData(_:forPlayer:).
 
 Changing the Video
 
@@ -113,37 +85,18 @@ When you change to a new video (in the same player) you need to update the infor
  The player advances to the next video in a playlist
  The user selects a different video to play
 
-This is done by calling videoChangeForPlayer: which will remove all previous video data and reset all metrics for the video view. You can include any metadata when changing the video but you should only need to update the values that start with video_.
+This is done by calling videoChange(forPlayer:with:) which will remove all previous video data and reset all metrics for the video view. You can include any metadata when changing the video but you should only need to update the values that start with video_.
 
-It is required to call videoChangeForPlayer: immediately before telling the player which new source to play. This recommendation changed in v1.2.0.
+It is required to call videoChange(forPlayer:with:) immediately before telling the player which new source to play. This recommendation changed in v1.2.0.
 
-It is also required to call player.play after replacing the current item.
+It is also required to call play() for player after replacing the current item.
 
-If you have new player data you instead call videoChangeForPlayer.
-
-
-```swift
-// Example of changing the AVPlayerItem
-
-let videoData = MUXSDKCustomerVideoData()
-videoData.videoId = "abcd123"
-videoData.videoTitle = "My Great Video"
-videoData.videoSeries = "Weekly Great Videos"
-videoData.videoDuration = 120000 // in milliseconds
-videoData.videoIsLive = false
-videoData.videoCdn = "cdn"
-MUXSDKStats.videoChange(forPlayer: "AVPlayer", with: videoData)
-
-player.replaceCurrentItem(with: AVPlayerItem(url: url!))
-// calling `play()` here is necessary
-player.play()
-```
-
+If you have new player data you can include it in the customerData you pass to videoChange(forPlayer:with:).
 
 New program (in single stream)
 In some cases, you may have the program change within a stream, and you may want to track each program as a view on its own. An example of this is a live stream that streams multiple programs back to back, with no interruptions.
 
-In this case, call programChangeForPlayer:withCustomerData:. This will remove all previous video data and reset all metrics for the video view, creating a new video view. You can include any metadata when changing the video but you should only need to update the values that start with video.
+In this case, call programChange(forPlayer:with:). This will remove all previous video data and reset all metrics for the video view, creating a new video view. You can include any metadata when changing the video but you should only need to update the values that start with video_.
 
 Usage with Google Interactive Media Ads (IMA)
 
@@ -212,7 +165,7 @@ You can find more examples in the "/Examples" directory of muxinc/mux-stats-sdk-
 
 Track orientation change events
 
-As of 1.3.0 Mux-Stats-AVPlayer can optionally track orientationchange events. To use this functionality, call the orientationChangeForPlayer method.
+As of 1.3.0 Mux-Stats-AVPlayer can optionally track orientationchange events. To use this functionality, call the orientationChange(forPlayer:with:) method.
 
 These events will show up on the events log on the view views page.
 
@@ -221,44 +174,9 @@ Usage with AVQueuePlayer
 To use with AVQueuePlayer  you will need to follow these steps:
 
 1. Listen for AVPlayerItemDidPlayToEndTime in your application
-2. When that notification fires, call videoChangeForPlayer:withVideoData
+2. When that notification fires, call videoChange(forPlayer:with:)
 
 Here is an example that sets up a AVQueuePlayer with two items, and listener after the first item finishes playing and passes in new videoData.
-
-
-```swift
-let playName = "iOS AVPlayer"
-
-override func viewDidLoad() {
-    super.viewDidLoad()
-
-    let item1 = AVPlayerItem(url: URL(string: "https://stream.mux.com/jY02nK1sxQKmJiQ7ltXY01w9LZQWdtNetE.m3u8")!)
-    let item2 = AVPlayerItem(url: URL(string: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!)
-    NotificationCenter.default.addObserver(
-        self,
-        selector: #selector(self.playerItemDidReachEnd),
-        name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-        object: item1
-    )
-    player = AVQueuePlayer(items: [item1, item2])
-
-    let playerData = MUXSDKCustomerPlayerData(environmentKey: "ENV_KEY");
-    playerData?.playerName = "AVPlayer"
-    let videoData = MUXSDKCustomerVideoData();
-    videoData.videoIsLive = false;
-    videoData.videoTitle = "Title1"
-    MUXSDKStats.monitorAVPlayerViewController(self, withPlayerName: playName, playerData: playerData!, videoData: videoData);
-    player!.play()
-}
-
-@objc func playerItemDidReachEnd (notification: NSNotification) {
-    let videoData = MUXSDKCustomerVideoData();
-    videoData.videoTitle = "Title2"
-    videoData.videoId = "applekeynote2010-2"
-    MUXSDKStats.videoChange(forPlayer: playName, with: videoData)
-}
-```
-
 
 Overriding device metadata
 
@@ -268,9 +186,9 @@ Handling errors manually
 
 By default, automaticErrorTracking is enabled which means the Mux SDK will catch errors that the player throws and track an error event. Error tracking is meant for fatal errors. When an error is thrown it will mark the view as having encountered an error in the Mux dashboard and the view will no longer be monitored.
 
-If you want to disable automatic and track errors manually you can do by passing in automaticErrorTracking: false to the monitor method that you are using.
+If you want to disable automatic error tracking and track errors manually, you can do so by passing false as the automaticErrorTracking parameter to the monitorAVPlayerLayer, monitorAVPlayerViewController, or monitorAVPlayer method you are using.
 
-Whether automatic error tracking is enabled or disabled, you can dispatch errors manually with dispatchError.
+Whether automatic error tracking is enabled or disabled, you can dispatch errors manually with dispatchError(_:withMessage:forPlayer:).
 
 Error Categorization
 
@@ -279,55 +197,6 @@ Set custom error metadata to distinguish between fatal errors or warnings and cl
 This is an example of how to categorize an error event to be a warning.
 
 This is an example of how to categorize an error event as a business exception.
-
-
-```objc
-// Call this method from the source of the business exception with parameters appropriate to your integration.
-- (void)dispatchBusinessExceptionWithPlayerName:(NSString *)playerName
-                                  playerErrorSeverity:(MUXSDKErrorSeverity)errorSeverity
-                                  playerErrorCode:(NSString *)playerErrorCode
-                                  playerErrorMessage:(NSString *)playerErrorMessage
-                                  playerErrorContext:(NSString *)playerErrorContext {
-  [MUXSDKStats dispatchError: playerErrorCode,
-                 withMessage: playerErrorMessage,
-                    severity: MUXSDKErrorSeverityWarning,
-         isBusinessException: YES,
-                errorContext: playerErrorContext,
-                   forPlayer: playerName];
-}
-```
-
-
-Installing manually with Carthage (not recommended)
-
-The recommended way to install the Mux SDKs is with CocoaPods. However, if you want to install manually via Carthage that is supported only for version 1.x of Mux-Stats-AVPlayer.
-
-If you are installing Mux-Stats-AVPlayer your Cartfile will also need to specify the mux-core library. Like this:
-
-
-```
-binary "https://raw.githubusercontent.com/muxinc/mux-stats-sdk-avplayer/master/MUXSDKStats.json"
-binary "https://raw.githubusercontent.com/muxinc/stats-sdk-objc/master/MUXCore.json"
-```
-
-
-After running carthage update --platform iOS follow the usual instructions for linking the frameworks. The Carthage README on GitHub walks through that and this guide is a good walk-through.
-
----
-
-If you are using the Google IMA integration there are a few extra steps. Your Cartfile will have these dependencies:
-
-
-```
-binary "https://raw.githubusercontent.com/muxinc/mux-stats-sdk-avplayer/master/MUXSDKStats.json"
-binary "https://raw.githubusercontent.com/muxinc/stats-sdk-objc/master/MUXCore.json"
-github "muxinc/mux-stats-google-ima" ~> 0.16.0
-```
-
-
-In addition to specifying these dependencies in the Cartfile and linking them up, you will also need to follow Google's documentation for "Manually, using the SDK download".
-
----
 
 App Store warning: ITMS-90809: Deprecated API Usage
 

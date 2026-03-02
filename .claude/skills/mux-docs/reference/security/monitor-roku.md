@@ -442,10 +442,14 @@ If the request is completed (type is "completed"), the request_type is "api" or 
 
 Current release
 
-v2.5.3
-- fix crash due to ad watch time metrics being Invalid during ad breaks
+v2.6.0
+- Fix inconsistent heartbeat management. may prevent excessive beacons or view state issues
+- Track playhead ranges for engagement tracking
 
 Previous releases
+
+v2.5.3
+- fix crash due to ad watch time metrics being Invalid during ad breaks
 
 v2.5.2
 - fix an issue where playback_mode may not have updated correctly on changes if set in initial config

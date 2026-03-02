@@ -507,6 +507,12 @@ There is no destroy event for the core Java SDK. Instead, the release method is 
 
 Current release
 
+v8.9.1
+Fixes:
+ Remove long-unused dependency on commons-math. If you were getting commons-math from us, you'll need to add a dependency for it
+
+Previous releases
+
 v8.9.0
 New:
  Track ranges of content played during a view via video_playback_range metric
@@ -514,8 +520,6 @@ New:
 Improvements:
  NetworkChangeEvent no longer accepts null values. If the network disconnects, use no_connection
  null values from IDevice.getNetworkConnectionType are now coerced to "no_connection"
-
-Previous releases
 
 v8.8.2
 Fixes:
@@ -669,7 +673,7 @@ Improvements:
 
 v7.7.2
 Improvements:
- Fix Ad metadata not being reported properly
+* Fix Ad metadata not being reported properly
 
 v7.7.0
 New:

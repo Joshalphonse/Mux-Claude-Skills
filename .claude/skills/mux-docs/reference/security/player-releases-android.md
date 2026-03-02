@@ -3,6 +3,20 @@
 **Source:** https://mux.com/docs/_guides/developer/player-releases-android
 
 Current release
+v1.5.3
+Improvements:
+
+ Update media3 to v1.9.2 and Mux Data to v1.11.1 (87)
+
+Previous releases
+
+v1.5.2
+Fixes:
+ Swap MuxPlayer to implement ExoPlayer
+
+v1.5.1
+Fixes:
+ FileNotFoundException from the cache stalls playback
 
 v1.5.0
 Improvements:
@@ -11,8 +25,6 @@ Improvements:
 
 Fixes:
  fix: DRM playback broken
-
-Previous releases
 
 v1.4.0
 Updates:
@@ -78,4 +90,4 @@ v0.3.0
 New:
  new: Add max and min playback resolution
 Updates:
-* update: Improve example app appearance + misc updates
+ update: Improve example app appearance + misc updates

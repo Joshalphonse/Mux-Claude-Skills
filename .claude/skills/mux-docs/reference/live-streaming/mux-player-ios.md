@@ -10,44 +10,26 @@ Open your applications project in Xcode. In the Xcode menu bar select File > Add
 
 By default Xcode will fetch the latest version of the SDK available on the main branch. If you need a specific package version or to restrict the range of package versions used in your application, select a different Dependency Rule. Here's an overview of the different SPM Dependency Rules and their semantics.
 
-Click on Add Package to begin resolving and downloading the SDK package. When completed, select your application target as the destination for the MuxPlayerSwift package product. To use the SDK in your application, import it's module: import MuxPlayerSwift.
+Click on Add Package to begin resolving and downloading the SDK package. When completed, select your application target as the destination for the MuxPlayerSwift package product. To use the SDK in your application, import it's module.
+
+
+```swift
+import MuxPlayerSwift
+```
+
 
 Use MuxPlayerSwift to setup an AVPlayerViewController or AVPlayerLayer that can download and stream a Mux asset with only a playback ID. The SDK will also enable Mux Data monitoring to help you measure the performance and quality of your application's video experiences.
 
 
 ```swift
-import AVFoundation
-import AVKit
-import MuxPlayerSwift
-
 /// After you're done testing, you can check this video out to learn more about video and players (as well as some philosophy)
 let playbackID = "qxb01i6T202018GFS02vp9RIe01icTcDCjVzQpmaB00CUisJ4"
 
-/// Prepare an AVPlayerViewController to stream and monitor a Mux asset
-func preparePlayerViewController(
-  playbackID: String
-) -> AVPlayerViewController {
+/// Prepare an AVPlayerViewController to stream and monitor a Mux asset, configured with the playback ID.
+let playerViewController = AVPlayerViewController(playbackID: playbackID)
 
-  let playerViewController = AVPlayerViewController(
-    playbackID: playbackID
-  )
-
-  return playerViewController
-}
-
-let examplePlayerViewController = preparePlayerViewController(playbackID: playbackID)
-
-/// Prepare an AVPlayerLayer to stream and monitor a Mux asset
-func preparePlayerLayer(
-  playbackID: String
-) -> AVPlayerLayer {
-
-  let playerLayer = AVPlayerLayer(
-    playbackID: playbackID
-  )
-
-  return playerLayer
-}
+/// Prepare an AVPlayerLayer to stream and monitor a Mux asset, configured with the playback ID.
+let playerLayer = AVPlayerLayer(playbackID: playbackID)
 ```
 
 
@@ -55,31 +37,17 @@ Your application can customize how Mux Video delivers video to the player using 
 
 
 ```swift
-import AVFoundation
-import AVKit
-import MuxPlayerSwift
-
 /// After you're done testing, you can check out this video out to learn more about video and players (as well as some philosophy)
 let playbackID = "qxb01i6T202018GFS02vp9RIe01icTcDCjVzQpmaB00CUisJ4"
 
-/// Prepares a ready-for-display AVPlayer instance that will not exceed 720 x 1280 resolution
-/// when streaming video
-func preparePlayerViewController(
-  playbackID: String
-) -> AVPlayerViewController {
-  let playbackOptions = PlaybackOptions(
-    maximumResolution: .upTo720p
-  )
+/// Create playback options to limit resolution up to 720p.
+let playbackOptions = PlaybackOptions(maximumResolutionTier: .upTo720p)
 
-  let playerViewController = AVPlayerViewController(
-    playbackID: playbackID,
-    playbackOptions: playbackOptions
-  )
-
-  return playerViewController
-}
-
-let examplePlayerViewController = preparePlayerViewController(playbackID: playbackID)
+/// Prepare an AVPlayerViewController to stream and monitor a Mux asset with playback options.
+let playerViewController = AVPlayerViewController(
+  playbackID: playbackID,
+  playbackOptions: playbackOptions
+)
 ```
 
 
@@ -95,33 +63,16 @@ If you're using UIView that is backed by an AVPlayerLayer to display video, MuxP
 
 
 ```swift
-import AVFoundation
-import UIKit
-
-import MuxPlayerSwift
-
 /// Prepare an already initialized AVPlayerLayer to stream and monitor a Mux asset
-func preparePlayerLayer(
-  playbackID: String,
-  playerView: UIView
-) {
-
-  // Check to make sure the player view backing
-  // layer is of the correct type and get a
-  // reference if it is
-
+func preparePlayerLayer(playbackID: String, in playerView: UIView) {
+  // Check to make sure the player view backing layer is of the correct type and get a reference if it is.
   guard let playerLayer = playerView.layer as? AVPlayerLayer else {
-    print("Unexpected backing layer type!")
     return
   }
 
-  // Prepares the player layer to stream media
-  // and monitor playback with Data
-  playerLayer.prepare(
-    playbackID: playbackID
-  )
+  // Prepares the player layer to stream media and monitor playback with Mux Data.
+  playerLayer.prepare(playbackID: playbackID)
 }
-
 ```
 
 
@@ -137,39 +88,29 @@ If you're already using the Mux Data SDK for AVPlayer this initializer) allows y
 
 
 ```swift
-import AVKit
-import MuxPlayerSwift
+let playbackID = "YOUR_PLAYBACK_ID"
+let customEnvironmentKey = "ENV_KEY"
 
-func preparePlayerViewController(
-  playbackID: String
-) -> AVPlayerViewController {
+// Configure custom Mux Data player metadata.
+let playerData = MUXSDKCustomerPlayerData()
+playerData.environmentKey = customEnvironmentKey
 
-  let customEnvironmentKey = "ENV_KEY"
+// Configure custom Mux Data video metadata.
+let videoData = MUXSDKCustomerVideoData()
+videoData.videoTitle = "Video Behind the Scenes"
+videoData.videoSeries = "Video101"
 
-  let playerData = MUXSDKCustomerPlayerData()
-  playerData.environmentKey = customEnvironmentKey
+// Combine metadata into customer data for monitoring.
+let customerData = MUXSDKCustomerData()
+customerData.customerPlayerData = playerData
+customerData.customerVideoData = videoData
 
-  let videoData = = MUXSDKCustomerVideoData()
-  videoData.videoTitle = "Video Behind the Scenes"
-  videoData.videoSeries = "Video101"
-
-  let customerData = MUXSDKCustomerData()
-  customerData.playerData = playerData
-  customerData.videoData = videoData
-
-  let monitoringOptions = MonitoringOptions(
-    customerData: customerData
-  )
-
-  let playerViewController = AVPlayerViewController(
-      playbackID: playbackID,
-      monitoringOptions: monitoringOptions
-  )
-
-  return playerViewController
-
-}
-
+// Build monitoring options and create the player.
+let monitoringOptions = MonitoringOptions(customerData: customerData, playerName: "MyPlayer1")
+let playerViewController = AVPlayerViewController(
+  playbackID: playbackID,
+  monitoringOptions: monitoringOptions
+)
 ```
 
 
@@ -187,73 +128,49 @@ To start playback, use the JWT to initialize PlaybackOptions. Then, initialize A
 
 
 ```swift
-import AVFoundation
-import AVKit
-import UIKit
-
-import MuxPlayerSwift
+let playbackID = "YOUR_PLAYBACK_ID"
+let playbackToken = "YOUR_PLAYBACK_TOKEN"
 
 /// Prepare an AVPlayerViewController to stream and monitor a Mux asset
-/// with a playback ID that has a signed playback policy
-func preparePlayerViewController(
-  playbackID: String,
-  playbackToken: String
-) -> AVPlayerViewController {
+/// with a playback ID that has a signed playback policy.
+let playbackOptions = PlaybackOptions(playbackToken: playbackToken)
+let playerViewController = AVPlayerViewController(
+  playbackID: playbackID,
+  playbackOptions: playbackOptions
+)
+```
 
-  let playbackOptions = PlaybackOptions(playbackToken: playbackToken)
 
-  let playerViewController = AVPlayerViewController(
-      playbackID: playbackID,
-      playbackOptions: playbackOptions
-  )
 
-  return playerViewController
-
-}
+```swift
+let playbackID = "YOUR_PLAYBACK_ID"
+let playbackToken = "YOUR_PLAYBACK_TOKEN"
 
 /// Prepare an AVPlayerLayer to stream and monitor a Mux asset
-/// with a playback ID that has a signed playback policy
-func preparePlayerLayer(
-  playbackID: String,
-  playbackToken: String
-) -> AVPlayerLayer {
+/// with a playback ID that has a signed playback policy.
+let playbackOptions = PlaybackOptions(playbackToken: playbackToken)
+let playerLayer = AVPlayerLayer(
+  playbackID: playbackID,
+  playbackOptions: playbackOptions
+)
+```
 
-  let playbackOptions = PlaybackOptions(playbackToken: playbackToken)
 
-  let playerLayer = AVPlayerLayer(
-      playbackID: playbackID,
-      playbackOptions: playbackOptions
-  )
 
-  return playerLayer
-}
-
+```swift
 /// Prepare an already initialized AVPlayerLayer to stream and monitor a Mux asset
-/// with a playback ID that has a signed playback policy
-func preparePlayerLayer(
-  playbackID: String,
-  playbackToken: String,
-  playerView: UIView
-) {
-
+/// with a playback ID that has a signed playback policy.
+func preparePlayerLayer(playbackID: String, playbackToken: String, in playerView: UIView) {
   let playbackOptions = PlaybackOptions(playbackToken: playbackToken)
 
-  // Check to make sure the player view backing
-  // layer is of the correct type and get a
-  // reference if it is
+  // Check to make sure the player view backing layer is of the correct type and get a reference if it is.
   guard let playerLayer = playerView.layer as? AVPlayerLayer else {
-    print("Unexpected backing layer type!")
     return
   }
 
-  // Prepares the player layer to stream media
-  // and monitor playback with Data
-  playerLayer.prepare(
-    playbackID: playbackID,
-    playbackOptions: playbackOptions
-  )
+  // Prepares the player layer to stream media and monitor playback with Mux Data.
+  playerLayer.prepare(playbackID: playbackID, playbackOptions: playbackOptions)
 }
-
 ```
 
 
@@ -270,34 +187,21 @@ Mux uses the industry standard FairPlay protocol for delivering DRM'd video cont
 
 
 ```swift
-import AVFoundation
-import AVKit
-import UIKit
+let playbackID = "YOUR_PLAYBACK_ID"
+let playbackToken = "YOUR_PLAYBACK_TOKEN"
+let drmToken = "YOUR_DRM_TOKEN"
 
-import MuxPlayerSwift
+/// Configure playback options for a playback ID configured for DRM.
+let playbackOptions = PlaybackOptions(
+  playbackToken: playbackToken,
+  drmToken: drmToken
+)
 
-/// Prepare an AVPlayerViewController to stream and monitor a Mux asset
-/// with a playback ID configured for DRM
-func preparePlayerViewController(
-  playbackID: String,
-  playbackToken: String,
-  drmToken: String
-) -> AVPlayerViewController {
-
-  let playbackOptions = PlaybackOptions(
-    playbackToken: playbackToken,
-    drmToken: drmToken
-  )
-
-  let playerViewController = AVPlayerViewController(
-      playbackID: playbackID,
-      playbackOptions: playbackOptions
-  )
-
-  return playerViewController
-
-}
-
+/// Prepare an AVPlayerViewController to stream and monitor a Mux asset.
+let playerViewController = AVPlayerViewController(
+  playbackID: playbackID,
+  playbackOptions: playbackOptions
+)
 ```
 
 
@@ -317,31 +221,19 @@ This example restricts the resolution range AVPlayer requests to be between 720p
 
 
 ```swift
-import AVKit
-import MuxPlayerSwift
+let playbackID = "YOUR_PLAYBACK_ID"
 
-/// Prepare an AVPlayerViewController to stream a Mux asset
-/// with a resolution range between 720p and 1080p
-func preparePlayerViewController(
-  playbackID: String,
-  maximumResolution: MaxResolutionTier,
-  minimumResolution: MinResolutionTier
-) -> AVPlayerViewController {
+// Configure playback options to request renditions between 720p and 1080p.
+let playbackOptions = PlaybackOptions(
+  maximumResolutionTier: .upTo1080p,
+  minimumResolutionTier: .atLeast720p
+)
 
-  let playbackOptions = PlaybackOptions(
-    maximumResolutionTier: .upTo1080p,
-    minimumResolutionTier: .atLeast720p
-  )
-
-  let playerViewController = AVPlayerViewController(
-    playbackID: playbackID,
-    playbackOptions: playbackOptions
-  )
-
-  return playerViewController
-
-}
-
+// Prepare an AVPlayerViewController to stream a Mux asset with this range.
+let playerViewController = AVPlayerViewController(
+  playbackID: playbackID,
+  playbackOptions: playbackOptions
+)
 ```
 
 
@@ -349,26 +241,16 @@ This example restricts the resolution AVPlayer requests to a single fixed resolu
 
 
 ```swift
-/// Prepare an AVPlayerViewController to stream a Mux asset
-/// at a fixed 720p resolution
-func preparePlayerViewController(
-  playbackID: String,
-  singleRenditionResolutionTier: SingleRenditionResolutionTier,
-) -> AVPlayerViewController {
+let playbackID = "YOUR_PLAYBACK_ID"
 
-  let playbackOptions = PlaybackOptions(
-    singleRenditionResolutionTier: .only720p
-  )
+// Configure playback options to request only the 720p rendition.
+let playbackOptions = PlaybackOptions(singleRenditionResolutionTier: .only720p)
 
-  let playerViewController = AVPlayerViewController(
-    playbackID: playbackID,
-    playbackOptions: playbackOptions
-  )
-
-  return playerViewController
-
-}
-
+// Prepare an AVPlayerViewController to stream a Mux asset at a fixed 720p resolution.
+let playerViewController = AVPlayerViewController(
+  playbackID: playbackID,
+  playbackOptions: playbackOptions
+)
 ```
 
 
@@ -382,27 +264,16 @@ If your Mux asset is publicly playable, specify a RenditionOrder.
 
 
 ```swift
-import AVKit
-import MuxPlayerSwift
+let playbackID = "YOUR_PLAYBACK_ID"
 
-/// Prepare an AVPlayerViewController to stream a Mux asset
-/// with a descending rendition order
-func preparePlayerViewController(
-  playbackID: String
-) -> AVPlayerViewController {
+// Configure playback options to prioritize higher renditions first.
+let playbackOptions = PlaybackOptions(renditionOrder: .descending)
 
-  let playbackOptions = PlaybackOptions(
-    renditionOrder: .descending
-  )
-
-  let playerViewController = AVPlayerViewController(
-    playbackID: playbackID,
-    playbackOptions: playbackOptions
-  )
-
-  return playerViewController
-}
-
+// Prepare an AVPlayerViewController to stream a Mux asset with descending rendition order.
+let playerViewController = AVPlayerViewController(
+  playbackID: playbackID,
+  playbackOptions: playbackOptions
+)
 ```
 
 
@@ -425,33 +296,19 @@ Assets that originate from a livestream can also be converted into instant clips
 
 
 ```swift
-import AVKit
-import MuxPlayerSwift
+let playbackID = "YOUR_PLAYBACK_ID"
 
-/// Prepare an AVPlayerViewController to stream
-/// just a highlight clip of your publicly viewable asset.
-/// The clip starts about 10 seconds after your asset starts
-/// and finishes approximately 10 more seconds after that.
-/// A few extra seconds of video may be included in the clip.
-func preparePlayerViewController(
-  playbackID: String
-) -> AVPlayerViewController {
+// Configure instant clipping for a highlight clip of your publicly viewable asset.
+// The clip starts about 10 seconds after your asset starts and finishes approximately 10 more seconds after that.
+// A few extra seconds of video may be included in the clip.
+let clipping = InstantClipping(assetStartTimeInSeconds: 10, assetEndTimeInSeconds: 20)
+let playbackOptions = PlaybackOptions(clipping: clipping)
 
-  let playbackOptions = PlaybackOptions(
-    instantClipping: InstantClipping(
-      assetStartTimeInSeconds: 10,
-      assetEndTimeInSeconds: 20
-    )
-  )
-
-  let playerViewController = AVPlayerViewController(
-    playbackID: playbackID,
-    playbackOptions: playbackOptions
-  )
-
-  return playerViewController
-}
-
+// Create an AVPlayerViewController to stream the instant clip.
+let playerViewController = AVPlayerViewController(
+  playbackID: playbackID,
+  playbackOptions: playbackOptions
+)
 ```
 
 
@@ -473,32 +330,23 @@ The example below enables the smart cache with playback at single fixed resoluti
 
 
 ```swift
-import AVKit
-import MuxPlayerSwift
+let playbackID = "YOUR_PLAYBACK_ID"
 
-/// Prepare an AVPlayerViewController to stream a Mux asset
-/// at a single pre-selected resolution with smart caching enabled
-func preparePlayerViewController(
-  playbackID: String,
-  singleRenditionResolutionTier: SingleRenditionResolutionTier
-) -> AVPlayerViewController {
+// Select a single rendition tier for smart caching (for example, only 720p).
+// Available values: https://devdocs.mux.dev/mux-player-swift/documentation/muxplayerswift/singlerenditionresolutiontier
+let singleRenditionResolutionTier: SingleRenditionResolutionTier = .only720p
 
-  // Requires a single rendition resolution tier
-  // available values can be found here
-  // https://devdocs.mux.dev/mux-player-swift/documentation/muxplayerswift/singlerenditionresolutiontier
-  //
-  let playbackOptions = PlaybackOptions(
-    enableSmartCache: true,
-    singleRenditionResolutionTier: singleRenditionResolutionTier
-  )
+// Enable smart cache and constrain playback to the selected single rendition tier.
+let playbackOptions = PlaybackOptions(
+  enableSmartCache: true,
+  singleRenditionResolutionTier: singleRenditionResolutionTier
+)
 
-  let playerViewController = AVPlayerViewController(
-    playbackID: playbackID,
-    playbackOptions: playbackOptions
-  )
-
-  return playerViewController
-}
+// Prepare an AVPlayerViewController to stream a Mux asset with smart caching enabled.
+let playerViewController = AVPlayerViewController(
+  playbackID: playbackID,
+  playbackOptions: playbackOptions
+)
 ```
 
 
