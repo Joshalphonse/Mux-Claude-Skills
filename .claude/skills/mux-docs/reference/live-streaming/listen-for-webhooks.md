@@ -169,3 +169,7 @@ These simulcast target events are useful when creating a UI that shows your user
 | video.live_stream.simulcast_target.errored | This fires when Mux has encountered an error either while attempting to connect to the third party streaming service or while broadcasting. Mux will try to re-establish the connection and if it does successfully the simulcast target will transition back to "broadcasting". |
 | video.live_stream.simulcast_target.updated | This simulcast target has been updated. |
 | video.live_stream.simulcast_target.deleted | This simulcast target has been deleted. |
+
+Webhook specification
+
+A machine-readable specification of all Mux webhook events is available at https://www.mux.com/webhook-spec.json. You can use this to generate types, validate payloads, or integrate with any tooling that supports OpenAPI-style schemas.

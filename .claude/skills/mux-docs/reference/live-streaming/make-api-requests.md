@@ -219,3 +219,7 @@ Requests against the Monitoring Data APIs are rate limited to a sustained 1 requ
 General Data API
 
 Requests against the all other General Data APIs are rate limited to a sustained 5 request per second (RPS) with the ability to burst above this for short periods of time.
+
+OpenAPI specification
+
+The complete Mux API is described by an OpenAPI specification, available at https://www.mux.com/api-spec.json. You can use this spec to generate API clients, import endpoints into tools like Postman, or integrate with any tooling that supports OpenAPI.

@@ -369,12 +369,29 @@ Release notes
 
 Current release
 
+v5.10.0
+
+Improvements
+
+ Continues tracking cumulative playing time after MUXSDKSeekedEvent and MUXSDKRebufferEndEvent when their playerData.playerIsPaused is true.
+ Updates the constant value for MUXSDKConnectionTypeNoConnection
+
+Previous releases
+
+v5.9.0
+
+Improvements
+ Adds viewerDeviceName property to MUXSDKCustomerViewerData
+
+v5.8.1
+
+Fixes
+ Resolves a leak (retain cycle) involving an internal class (MUXSDKCoreView).
+
 v5.8.0
 
 Improvements
  Adds MUXSDKNetworkChangeEvent and predefined values for connection type via MUXSDKConnectionType
-
-Previous releases
 
 v5.7.1
 

@@ -24,7 +24,7 @@ HLS/DASH streaming, players, playback policies, encoding, thumbnails, watermarks
 ### Live Streaming
 Broadcasting, RTMP/SRT, stream keys, recording, DVR, latency optimization
 
-**Location:** `reference/live-streaming/` (68 files)
+**Location:** `reference/live-streaming/` (69 files)
 
 ### Security & Access Control
 Signed URLs, JWT signing, DRM protection, playback restrictions, authentication
@@ -44,7 +44,7 @@ QoS metrics, viewer analytics, custom dashboards, monitoring, alerts, webhooks
 ### Frameworks & Integrations
 React, Next.js, Vue, Laravel, CMS integrations, platform-specific SDKs
 
-**Location:** `reference/frameworks-and-integrations/` (39 files)
+**Location:** `reference/frameworks-and-integrations/` (40 files)
 
 ### Miscellaneous
 Other documentation and guides

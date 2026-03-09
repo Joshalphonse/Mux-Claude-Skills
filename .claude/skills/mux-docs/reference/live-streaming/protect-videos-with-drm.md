@@ -47,8 +47,8 @@ If you need any of these additional protections, or something we've overlooked, 
 Before you can start using Mux DRM you must complete the onboarding process. The following is a quick overview of the entire process, and you can find additional detail later in this guide.
 
 1. Request a FairPlay certificate for playback on Apple Devices. Don't worry about Widevine and PlayReady certificates, we'll handle those for you.
-2. While waiting on FairPlay approval, Send us a link to any environments that need DRM and we'll set it up.
-3. After we enable DRM on your environments we'll send you a DRM configuration ID and tell you how to securely send us your FairPlay certificates.
+2. While waiting on FairPlay approval, go to Settings -> Digital Rights Management in your Mux dashboard to request DRM access.
+3. After DRM is enabled on your environments we'll send you a DRM configuration ID and tell you how to securely send us your FairPlay certificates.
 
 Once these steps are complete you will have your DRM configuration ID and be able to test DRM playback on non-Apple devices. Once you've sent us your FairPlay certificates you can test on Apple devices.
 

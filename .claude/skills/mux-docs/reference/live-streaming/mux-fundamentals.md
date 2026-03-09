@@ -243,6 +243,21 @@ For client-side playback, see Mux Player and the various player SDK guides.
 
 Learn more: Use an SDK
 
+API and webhook specifications
+
+Mux publishes machine-readable specifications for both the API and webhook events:
+
+| Specification | URL | Description |
+| :------------ | :-- | :---------- |
+| Combined spec | mux.com/full-combined-spec.json | All API endpoints and webhook events in one spec |
+| API spec | mux.com/api-spec.json | Core API endpoints only |
+| Webhook spec | mux.com/webhook-spec.json | Webhook event schemas only |
+| Image API spec | mux.com/image-spec.json | Thumbnail, animated GIF, and storyboard endpoints |
+| Streaming API spec | mux.com/stream-spec.json | HLS and MP4 streaming playback endpoints |
+| Engagement Counts spec | mux.com/stats-spec.json | Real-time view and viewer count endpoints |
+
+These are useful for generating API clients, importing into tools like Postman, validating webhook payloads, or integrating with any tooling that supports OpenAPI. Use the combined spec if you want everything in one file.
+
 What's next?
 
 Now that you understand the fundamentals, here are some recommended next steps:
